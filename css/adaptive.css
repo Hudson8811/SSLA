@@ -47,6 +47,7 @@
 	.leading_block .block:nth-child(2){padding-left:0;}
 	.yellow_block .row, .format_block .row{text-align:center;}
 	.yellow_block .row .block, .format_block .row .item{width:50%; max-width:328px; margin-bottom:26px; text-align:left;}
+	.on_dekstop{display: none;}
 }
 
 @media (max-width: 700px) {
