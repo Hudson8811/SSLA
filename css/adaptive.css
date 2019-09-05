@@ -1,15 +1,15 @@
 @media (min-width: 1000px) {
-	
+
 }
 
 @media (min-width: 1250px) {
-	
-	
+
+
 }
 
 @media (max-width: 1250px) {
-	
-	
+
+
 }
 
 @media (max-width: 999px) {
@@ -19,7 +19,6 @@
 	.how_block .row .block{display:inline-block; vertical-align:top; float:none; text-align:left; width:50%; max-width:313px;}
 	.how_block .row .block:first-child{display:block; float:none; padding-right:0; margin-left:auto; margin-right:auto; width:auto; max-width:283px;}
 	.form_block .row .text_block{width:40%;}
-	.yellow_block ul:first-child, .yellow_block ul:nth-child(2){padding-right:40px;}
 	.banner_block .start{display:block; text-align:center;}
 	.banner_block .call_me{position:relative; margin-left:auto; margin-right:auto; right:auto; top:auto; margin-top:25px;}
 	.btn11 {width: 26px; height: 53px; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; z-index:301; position:absolute; margin-top:-20px;}
@@ -45,11 +44,25 @@
 	.leading_block .block{float:none; width:auto; max-width:462px; margin-left:auto; margin-right:auto; margin-bottom:30px;}
 	.leading_block .block:first-child{padding-right:0;}
 	.leading_block .block:nth-child(2){padding-left:0;}
-	.yellow_block .row, .format_block .row{text-align:center;}
-	.yellow_block .row .block, .format_block .row .item{width:50%; max-width:328px; margin-bottom:26px; text-align:left;}
-	.on_dekstop{display: none;}
-}
+	.format_block .row{text-align:center;}
+	.format_block .row .item{width:50%; max-width:328px; margin-bottom:26px; text-align:left;}
 
+	.yellow_block .row{max-height: 1059px;}
+	.yellow_block .row .block{width: calc(100% / 2 - 30px);}
+
+	.on_dekstop{display: none;}
+	.leading_block .block .red_block:first-child{padding-right: 161px;}
+	.leading_block .block .red_block__2 {
+		margin-top: 31px;
+	}
+
+	.leading_block .block:first-child .text_block {
+		padding-left: 0;
+	}
+}
+@media (min-width: 701px) and (max-width: 800px) {
+	.yellow_block .row{max-height: 1150px;}
+}
 @media (max-width: 700px) {
 	.otziv_block .video{height:300px;}
 	.how_block .row{margin-right:0;}
@@ -58,22 +71,42 @@
 	.format_block .block:nth-child(2){padding-left:0;}
 	.yellow_block ul li .db{display:none;}
 	.yellow_block ul:first-child, .yellow_block ul:nth-child(2){padding-right:0; width:auto; float:none; padding-left:0;}
-	.yellow_block .row .block, .format_block .row .item{width:auto; float:none; max-width:298px;}
+	.format_block .row .item{width:auto; float:none; max-width:298px;}
 	.form_block .row .text_block, .format_block .block{float:none; width:auto; padding-top:0;}
-	.yellow_block .row, .format_block .row{margin-right:0;}
-	
+	.format_block .row{margin-right:0;}*/
+	.yellow_block .row, .format_block .row{max-height: unset;}
+	.yellow_block .row .block{width: calc(100% - 30px);}
+
 }
 @media (max-width: 500px) {
-	.leading_block .ah1{margin-bottom: 80px;}
-}
-
-@media (max-width: 450px) {
+	.leading_block .ah1 {
+		margin-bottom: 367px;
+	}
+	.leading_block .block:first-child {
+		padding-right: 0;
+	}
+	.leading_block .block .red_block:first-child {
+		padding-right: 19px;
+	}
+	.leading_block .block {
+		margin-bottom: 0;
+	}
 	.leading_block .block{margin-bottom: 30px;}
-	.leading_block .block .red_block img{right: 0; margin-right: -5px; max-width: 160px; top:auto; bottom: 0;}
+	.leading_block .block .red_block img{/*right: 0; margin-right: -5px; max-width: 160px; top:auto; bottom: 0;*/
+	    right: calc((100% - 256px)/ 2 + 5px);
+		margin-right: -5px;
+		max-width: 100%;
+		top: -361px;
+	}
 	.leading_block .block .red_text img{left:50%; margin-left:-106px; right:auto;}
 	.leading_block .block .red_text{margin-bottom: 0;}
 	.leading_block .block .red_text .db{display:none;}
-	.leading_block .block .red_block{padding-right:20px; min-height:auto; padding-bottom:20px; margin-bottom: 30px;}
+	.leading_block .block .red_block{padding-right:20px; min-height:auto; padding-bottom:20px;}
+	.leading_block .block .red_block__2{margin-top: 10px}
+}
+
+@media (max-width: 450px) {
+
 	.otziv_block .video{height:200px;}
 	.banner_block .start span{display:block;}
 	.banner_block .start{font-size:18px; padding:0; background:transparent; text-align:left; line-height:21px;}
