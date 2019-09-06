@@ -2,13 +2,13 @@
 
 #header{z-index: 10;height:40px; background:#e94f35; color:#fff;  padding-top:14px; box-sizing:border-box; font-size:14px; line-height:16px;}
 #header .logo{width:199px; height:15px; font-size:18px; line-height:18px; margin-top:-3px; font-family: 'ProximaNova-Bold'; padding-bottom:5px;}
-#header .call_me{opacity:0; visibility:hidden; transition:.3s opacity, .3s visibility;}
+#header .call_me{/*opacity:0; visibility:hidden; */transition:.3s opacity, .3s visibility;}
 #header .call_me:before{content:'|'; display:inline-block; vertical-align:top; margin-right:11px;}
 #header .call_me.active{opacity:1; visibility:visible;}
 #header .menu li{display:inline-block; vertical-align:top;}
 #header .menu li:hover{font-family: 'ProximaNova-Bold';}
 #header .menu li + li{border-left:1px solid #fff; margin-left:4px; padding-left:9px;}
-#header .menu li.last{display:none;}
+#header .menu li.last{display: none;}
 
 .banner_block{padding-top:53px; padding-bottom:38px; border-bottom:1px solid #1b1e1e; background:#333333 url(../img/banner1.jpg) no-repeat center center; background-size:auto 100%; color:#fff; font-size:21px; line-height:26px;}
 .banner_block .inner{max-width:462px;}
@@ -137,4 +137,7 @@
 .sert img{
     max-width: 100%;
     height: auto;
+}
+.new_line_no_mobile{
+    display: block;
 }
