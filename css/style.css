@@ -833,8 +833,11 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 21px;
+    transition-duration: .2s;
 }
-
+.co-pa-row__item:hover{
+    opacity: .8;
+}
 .co-pa-row .co-pa-row__item img {
     max-width: 100%;
     height: auto;
