@@ -606,8 +606,8 @@
 }
 
 .form_block {
+    padding-top: 30px;
     padding-top: 49px;
-    padding-bottom: 21px;
 }
 
 .form_block .row {
@@ -813,7 +813,6 @@
 
 .course-parthners-block {
     width: 100%;
-    box-sizing: border-box;
     background: #ffffff;
     padding: 19px 19px 18px;
     margin-top: 29px;

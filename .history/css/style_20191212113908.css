@@ -130,7 +130,7 @@
 .yellow_block {
     background: #f3f4f4;
     padding-top: 41px;
-    padding-bottom: 16px;
+    padding-bottom: 26px;
 }
 
 .yellow_block .ah1 {
@@ -141,7 +141,7 @@
 }
 
 .yellow_block ul {
-    padding-bottom: 31px;
+    padding-bottom: 41px;
 }
 
 .yellow_block ul:first-child {
@@ -177,8 +177,7 @@
 .yellow_block .ah2 {
     font-size: 21px;
     line-height: 23px;
-    margin-bottom: 27px;
-    margin-top: 32px;
+    margin-bottom: 30px;
 }
 
 .yellow_block .row {
@@ -186,16 +185,16 @@
     margin-left: -15px;
     font-size: 0;
     display: flex;
-    align-items: stretch;
+    flex-direction: column;
     flex-wrap: wrap;
-    max-height: unset !important;
+    max-height: 1000px;
 }
 
 .yellow_block .row .block {
     width: calc(100% / 3 - 30px);
     margin-right: 15px;
     margin-left: 15px;
-    margin-bottom: 27px;
+    margin-bottom: 19px;
     color: #333333;
     font-size: 15px;
     line-height: 21px;
@@ -209,10 +208,9 @@
 
 .yellow_block .row .block>div {
     background: #fff;
-    padding: 12px 19px 17px;
+    padding: 12px 19px 13px;
     box-sizing: border-box;
     min-height: 208px;
-    height: 100%;
 }
 
 .yellow_block .row .block .image_block {
@@ -246,11 +244,11 @@
 
 .yellow_block .row .block:nth-child(3) p,
 .yellow_block .row .block:nth-child(6) p {
-    /*  margin-right: -10px;*/
+    margin-right: -10px;
 }
 
 .yellow_block .row .block:nth-child(4) p {
-    padding-right: 10px;
+    padding-right: 15px;
 }
 
 .yellow_block .row .block:nth-child(4) p span {
@@ -258,8 +256,8 @@
 }
 
 .format_block {
-    padding-top: 41px;
-    padding-bottom: 50px;
+    padding-top: 37px;
+    padding-bottom: 35px;
 }
 
 .format_block .ah1 {
@@ -270,7 +268,7 @@
 }
 
 .format_block .block {
-    margin-bottom: 32px;
+    margin-bottom: 35px;
     line-height: 21px;
 }
 
@@ -282,7 +280,7 @@
     font-size: 21px;
     line-height: 24px;
     color: #e94f35;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .format_block .block .p {
@@ -339,7 +337,6 @@
     color: #e94f35;
     padding: 9px 20px 0;
     height: 38px;
-    margin-bottom: 31px;
 }
 
 .format_block .row .item .text {
@@ -369,8 +366,8 @@
 
 .leading_block {
     background: #f3f4f4;
-    padding-top: 43px;
-    padding-bottom: 12px;
+    padding-top: 45px;
+    padding-bottom: 18px;
 }
 
 .leading_block .ah1 {
@@ -385,13 +382,13 @@
 }
 
 .leading_block .block:nth-child(2) {
-    padding-left: 37px;
+    padding-left: 15px;
 }
 
 .leading_block .block .red_block {
     min-height: 170px;
     box-sizing: border-box;
-    padding: 29px 20px 29px 20px;
+    padding: 29px 20px 19px 20px;
     background: #e94f35;
     color: #fff;
     line-height: 20px;
@@ -415,8 +412,8 @@
 
 .leading_block .block .red_block img {
     position: absolute;
-    right: 40px;
-    top: -74px;
+    right: 0px;
+    top: -38px;
     z-index: 1;
 }
 
@@ -425,8 +422,7 @@
     line-height: 20px;
     padding: 0 20px 10px 20px;
     box-sizing: border-box;
-    margin-bottom: 20px;
-    margin-top: 99px;
+    margin-bottom: 40px;
     position: relative;
 }
 
@@ -461,7 +457,7 @@
     color: #fff;
     font-size: 21px;
     line-height: 28px;
-    padding-top: 38px;
+    padding-top: 43px;
     padding-bottom: 32px;
 }
 
@@ -497,11 +493,11 @@
 
 .otziv_block .row .block>div {
     background: #f3f4f4;
+    padding: 18px 20px 17px;
+    margin-bottom: 25px;
     line-height: 21px;
     box-sizing: border-box;
     min-height: 148px;
-    padding: 19px 19px 23px 20px;
-    margin-bottom: 20px;
 }
 
 .otziv_block .row .block>div p {
@@ -514,7 +510,7 @@
 
 .otziv_block .video {
     height: 537px;
-    padding-top: 58px;
+    padding-top: 16px;
 }
 
 .otziv_block .video iframe {
@@ -526,7 +522,7 @@
 .how_block {
     background: #889797;
     color: #fff;
-    padding-top: 44px;
+    padding-top: 36px;
     padding-bottom: 10px;
     font-size: 14px;
     line-height: 18px;
@@ -566,7 +562,7 @@
 }
 
 .how_block .row .block .ah2 {
-    margin-bottom: 5px;
+    margin-bottom: 16px;
 }
 
 .how_block .row .block .price {
@@ -606,8 +602,8 @@
 }
 
 .form_block {
-    padding-top: 49px;
-    padding-bottom: 21px;
+    padding-top: 30px;
+    padding-bottom: 23px;
 }
 
 .form_block .row {
@@ -777,7 +773,6 @@
     transition-duration: .2s;
     width: 390px;
     max-width: 100%;
-    margin-bottom: 47px;
 }
 
 .jotting:hover {
@@ -809,51 +804,4 @@
     text-transform: none;
     color: #e94f35;
     display: block;
-}
-
-.course-parthners-block {
-    width: 100%;
-    box-sizing: border-box;
-    background: #ffffff;
-    padding: 19px 19px 18px;
-    margin-top: 29px;
-}
-
-.co-pa-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 17px;
-}
-
-.co-pa-row .co-pa-row__item {
-    display: block;
-    margin-right: 22px;
-    color: #e94f35;
-    font-family: "ProximaNova-Semibold";
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 21px;
-}
-
-.co-pa-row .co-pa-row__item img {
-    max-width: 100%;
-    height: auto;
-}
-
-.course-parthners-block p {
-    color: #333333;
-    font-family: "ProximaNova-Semibold";
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 21px
-}
-
-.course-parthners-block p+p {
-    margin-top: 21px;
-}
-
-
-.module-vert-line {
-    margin-left: 4px;
-    margin-right: 3px;
 }

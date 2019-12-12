@@ -344,12 +344,6 @@
 
 }
 
-@media (max-width: 635px) {
-	.format_block .row .item {
-		padding-right: 0;
-	}
-}
-
 @media (max-width: 579px) {
 	.co-pa-row__item:not(:first-child) {
 		width: 100%;
@@ -357,7 +351,7 @@
 		display: flex !important;
 		justify-content: center;
 		align-items: center;
-		margin-top: 15px;
+		margin-top: 10px;
 	}
 }
 
@@ -402,7 +396,6 @@
 
 	.leading_block .block .red_text {
 		margin-bottom: 0;
-		margin-top: 35px;
 	}
 
 	.leading_block .block .red_text .db {

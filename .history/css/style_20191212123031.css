@@ -186,7 +186,7 @@
     margin-left: -15px;
     font-size: 0;
     display: flex;
-    align-items: stretch;
+align-items: stretch;
     flex-wrap: wrap;
     max-height: unset !important;
 }
@@ -246,7 +246,7 @@
 
 .yellow_block .row .block:nth-child(3) p,
 .yellow_block .row .block:nth-child(6) p {
-    /*  margin-right: -10px;*/
+  /*  margin-right: -10px;*/
 }
 
 .yellow_block .row .block:nth-child(4) p {
@@ -258,8 +258,8 @@
 }
 
 .format_block {
-    padding-top: 41px;
-    padding-bottom: 50px;
+    padding-top: 37px;
+    padding-bottom: 35px;
 }
 
 .format_block .ah1 {
@@ -270,7 +270,7 @@
 }
 
 .format_block .block {
-    margin-bottom: 32px;
+    margin-bottom: 35px;
     line-height: 21px;
 }
 
@@ -282,7 +282,7 @@
     font-size: 21px;
     line-height: 24px;
     color: #e94f35;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .format_block .block .p {
@@ -339,7 +339,6 @@
     color: #e94f35;
     padding: 9px 20px 0;
     height: 38px;
-    margin-bottom: 31px;
 }
 
 .format_block .row .item .text {
@@ -369,8 +368,8 @@
 
 .leading_block {
     background: #f3f4f4;
-    padding-top: 43px;
-    padding-bottom: 12px;
+    padding-top: 45px;
+    padding-bottom: 18px;
 }
 
 .leading_block .ah1 {
@@ -385,13 +384,13 @@
 }
 
 .leading_block .block:nth-child(2) {
-    padding-left: 37px;
+    padding-left: 15px;
 }
 
 .leading_block .block .red_block {
     min-height: 170px;
     box-sizing: border-box;
-    padding: 29px 20px 29px 20px;
+    padding: 29px 20px 19px 20px;
     background: #e94f35;
     color: #fff;
     line-height: 20px;
@@ -415,8 +414,8 @@
 
 .leading_block .block .red_block img {
     position: absolute;
-    right: 40px;
-    top: -74px;
+    right: 0px;
+    top: -38px;
     z-index: 1;
 }
 
@@ -425,8 +424,7 @@
     line-height: 20px;
     padding: 0 20px 10px 20px;
     box-sizing: border-box;
-    margin-bottom: 20px;
-    margin-top: 99px;
+    margin-bottom: 40px;
     position: relative;
 }
 
@@ -461,7 +459,7 @@
     color: #fff;
     font-size: 21px;
     line-height: 28px;
-    padding-top: 38px;
+    padding-top: 43px;
     padding-bottom: 32px;
 }
 
@@ -497,11 +495,11 @@
 
 .otziv_block .row .block>div {
     background: #f3f4f4;
+    padding: 18px 20px 17px;
+    margin-bottom: 25px;
     line-height: 21px;
     box-sizing: border-box;
     min-height: 148px;
-    padding: 19px 19px 23px 20px;
-    margin-bottom: 20px;
 }
 
 .otziv_block .row .block>div p {
@@ -514,7 +512,7 @@
 
 .otziv_block .video {
     height: 537px;
-    padding-top: 58px;
+    padding-top: 16px;
 }
 
 .otziv_block .video iframe {
@@ -526,7 +524,7 @@
 .how_block {
     background: #889797;
     color: #fff;
-    padding-top: 44px;
+    padding-top: 36px;
     padding-bottom: 10px;
     font-size: 14px;
     line-height: 18px;
@@ -566,7 +564,7 @@
 }
 
 .how_block .row .block .ah2 {
-    margin-bottom: 5px;
+    margin-bottom: 16px;
 }
 
 .how_block .row .block .price {
@@ -606,8 +604,8 @@
 }
 
 .form_block {
-    padding-top: 49px;
-    padding-bottom: 21px;
+    padding-top: 30px;
+    padding-bottom: 23px;
 }
 
 .form_block .row {
@@ -813,7 +811,6 @@
 
 .course-parthners-block {
     width: 100%;
-    box-sizing: border-box;
     background: #ffffff;
     padding: 19px 19px 18px;
     margin-top: 29px;
@@ -850,10 +847,4 @@
 
 .course-parthners-block p+p {
     margin-top: 21px;
-}
-
-
-.module-vert-line {
-    margin-left: 4px;
-    margin-right: 3px;
 }

@@ -566,7 +566,7 @@
 }
 
 .how_block .row .block .ah2 {
-    margin-bottom: 5px;
+    margin-bottom: 16px;
 }
 
 .how_block .row .block .price {
@@ -606,8 +606,8 @@
 }
 
 .form_block {
-    padding-top: 49px;
-    padding-bottom: 21px;
+    padding-top: 30px;
+    padding-bottom: 23px;
 }
 
 .form_block .row {
@@ -813,7 +813,6 @@
 
 .course-parthners-block {
     width: 100%;
-    box-sizing: border-box;
     background: #ffffff;
     padding: 19px 19px 18px;
     margin-top: 29px;
