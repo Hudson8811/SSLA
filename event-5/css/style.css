@@ -378,10 +378,12 @@
 }
 
 .format_block .row .item .date2 {
+    font-size: 15px;
     line-height: 18px;
     color: #e94f35;
     padding: 9px 20px 0;
     height: 38px;
+    text-transform: none;
 }
 
 .format_block .row .item .text {
