@@ -1,0 +1,266 @@
+#main {
+    padding-top: 40px;
+}
+
+#header {
+    z-index: 10;
+    height: 40px;
+    background: #e94f35;
+    color: #fff;
+    padding-top: 14px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#header .logo {
+    width: 199px;
+    height: 15px;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: -3px;
+    font-family: 'ProximaNova-Bold';
+    padding-bottom: 5px;
+}
+
+#header .call_me {
+    /*opacity:0; visibility:hidden; */
+    transition: .3s opacity, .3s visibility;
+}
+
+#header .call_me:before {
+    content: '|';
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 11px;
+}
+
+#header .call_me.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#header .menu li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#header .menu li:hover {
+    font-family: 'ProximaNova-Bold';
+}
+
+#header .menu li+li {
+    border-left: 1px solid #fff;
+    margin-left: 4px;
+    padding-left: 9px;
+}
+
+#header .menu li.last {
+    display: none;
+}
+
+.banner_block {
+    padding-top: 53px;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #1b1e1e;
+    background: #333333 url(../img/banner1.jpg) no-repeat center center;
+    background-size: auto 100%;
+    color: #fff;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.banner_block .inner {
+    max-width: 462px;
+}
+
+.banner_block .ah1 {
+    margin-bottom: 13px;
+}
+
+.banner_block .ah2 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 38px;
+}
+
+.banner_block .start {
+    line-height: 42px;
+    font-size: 21px;
+    padding: 0 20px;
+    background: #e94f35;
+    margin-top: 65px;
+    margin-bottom: -3px;
+}
+
+.banner_block .call_me {
+    right: -194px;
+    top: 45px;
+    width: 164px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+    background: #e94f35;
+}
+
+.gray_block {
+    background: #889797;
+    color: #fff;
+    padding-top: 28px;
+    padding-bottom: 26px;
+    line-height: 21px;
+}
+
+.gray_block .ah1 {
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 16px;
+}
+
+.gray_block p {
+    padding-right: 20px;
+}
+
+.gray_block .ah2 {
+    font-size: 21px;
+    line-height: 23px;
+    margin-top: 23px;
+}
+
+#footer {
+    font-size: 14px;
+    line-height: 17px;
+    color: #889797;
+    padding-top: 8px;
+    padding-bottom: 23px;
+    border-top: 1px solid #889797;
+}
+
+#spasibo {
+    width: 280px;
+    height: 200px;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#spasibo .ah1 {
+    font-size: 25px;
+    line-height: 27px;
+    color: #e94f35;
+    margin-bottom: 15px;
+}
+
+#spasibo .b-modal_close {
+    line-height: 50px;
+}
+
+.arcticmodal-container_i2 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.sert img {
+    max-width: 100%;
+    height: auto;
+}
+
+.new_line_no_mobile {
+    display: block;
+}
+
+
+
+.jotting {
+    display: flex;
+    transition-duration: .2s;
+    width: 390px;
+    max-width: 100%;
+    margin-bottom: 47px;
+}
+
+.jotting:hover {
+    opacity: .8;
+}
+
+.jotting__pic {
+    min-width: 51px;
+    height: 56px;
+    background: #e94f34;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jotting__pic img {}
+
+.jotting__text {
+    padding-top: 2px;
+    color: #2a2d2f;
+    font-size: 21px;
+    font-family: 'ProximaNova-Bold';
+    line-height: 22.81px;
+    text-transform: uppercase;
+}
+
+.jotting__text span {
+    text-transform: none;
+    color: #e94f35;
+    display: block;
+}
+
+.course-parthners-block {
+    width: 100%;
+    box-sizing: border-box;
+    background: #ffffff;
+    padding: 19px 19px 18px;
+    margin-top: 29px;
+}
+
+.co-pa-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 17px;
+}
+
+.co-pa-row .co-pa-row__item {
+    display: block;
+    margin-right: 22px;
+    color: #e94f35;
+    font-family: "ProximaNova-Semibold";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    transition-duration: .2s;
+}
+.co-pa-row__item:hover{
+    opacity: .8;
+}
+.co-pa-row .co-pa-row__item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.course-parthners-block p {
+    color: #333333;
+    font-family: "ProximaNova-Semibold";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px
+}
+
+.course-parthners-block p+p {
+    margin-top: 21px;
+}
+
+
+.module-vert-line {
+    margin-left: 4px;
+    margin-right: 3px;
+}
