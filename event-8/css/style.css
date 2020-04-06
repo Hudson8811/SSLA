@@ -119,11 +119,12 @@
     right: -245px;
     top: 45px;
     width: 141px;
-    text-align: center;
+    text-align: left;
     line-height: 24px;
     font-size: 21px;
     background: #e94f35;
-    padding: 10px 0px;
+    padding: 10px 10px;
+    box-sizing: border-box;
 }
 
 .banner_block .call_me span {
