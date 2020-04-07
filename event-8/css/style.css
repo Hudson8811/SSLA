@@ -292,7 +292,7 @@
 }
 
 .features_block {
-    margin-top: 43px;
+    padding-top: 43px;
     margin-bottom: 50px;
 }
 
@@ -539,7 +539,7 @@
 .content_course .ah2 {
     font-size: 32px;
     font-weight: 600;
-    margin-top: 59px;
+    padding-top: 59px;
     margin-bottom: 35px;
     letter-spacing: .5px;
 }
