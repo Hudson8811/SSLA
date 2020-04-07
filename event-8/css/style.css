@@ -403,12 +403,15 @@
     font-weight: 600;
 }
 
+.features_block .over-link-scroll {
+    padding-top: 22px;
+}
+
 .features_block .over_link {
     display: block;
     max-width: 210px;
     text-align: center;
     margin-left: auto;
-    margin-top: 22px;
     letter-spacing: 0.3px;
 }
 
