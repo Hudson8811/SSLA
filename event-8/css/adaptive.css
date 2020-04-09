@@ -272,6 +272,17 @@
 }
 
 @media screen and (max-width: 800px) {
+    .module_block .row {
+        justify-content: center;
+    }
+    .module_block .row .item {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .module_block .row .item .description span {
+        font-size: 12px;
+        line-height: 15px;
+    }
     .features_block .flex_block {
         flex-wrap: wrap;
     }
@@ -377,6 +388,17 @@
 }
 
 @media (max-width: 579px) {
+    .over_link {
+        font-size: 12px;
+    }
+    .going_block .heading {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .module_block .link_block {
+        font-size: 20px;
+        line-height: 23px;
+    }
     .co-pa-row__item:not(:first-child) {
         width: 100%;
         margin-right: 0;
@@ -534,6 +556,9 @@
     .yellow_block .row .block,
     .format_block .row .item {
         max-width: none;
+    }
+    .module_block .castom-row .item .heading {
+        font-size: 12px;
     }
 }
 
