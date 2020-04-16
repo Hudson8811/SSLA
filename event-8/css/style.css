@@ -125,6 +125,7 @@
     background: #e94f35;
     padding: 10px 10px;
     box-sizing: border-box;
+    cursor: default;
 }
 
 .banner_block .call_me span {
@@ -146,7 +147,7 @@
 }
 
 .gray_block p {
-    padding-right: 20px;
+    padding-right: 35px;
 }
 
 .gray_block .ah2 {
@@ -405,14 +406,25 @@
 
 .features_block .over-link-scroll {
     padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .features_block .over_link {
     display: block;
-    max-width: 210px;
     text-align: center;
-    margin-left: auto;
+    margin-left: 20px;
     letter-spacing: 0.3px;
+    flex-wrap: wrap;
+}
+
+.features_block .over_link:nth-child(1) {
+    padding: 13px 16px;
+}
+
+.features_block .over_link:nth-child(2) {
+    padding: 13px 21px;
 }
 
 .description_block {
@@ -788,6 +800,22 @@
     flex-direction: column;
 }
 
+.module_block .item:nth-child(2) .description {
+    padding-right: 65px;
+}
+
+.module_block .item:nth-child(5) .description {
+    padding-right: 50px;
+}
+
+.module_block .item:nth-child(6) .description {
+    padding-right: 57px;
+}
+
+.module_block .item:nth-child(9) .description {
+    padding-right: 24px;
+}
+
 .module_block .item .description {
     background: #f3f4f4;
     padding-left: 18px;
@@ -795,6 +823,7 @@
     padding-right: 33px;
     min-height: 89px;
     box-sizing: border-box;
+    line-height: 21px;
 }
 
 .castom-row .item {

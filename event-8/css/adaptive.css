@@ -10,6 +10,12 @@
 @media (max-width: 1250px) {}
 
 @media (max-width: 999px) {
+    .features_block .over-link-scroll {
+        flex-direction: column;
+    }
+    .features_block .over-link-scroll .over_link {
+        margin-bottom: 15px;
+    }
     #header .menu li.last {
         display: inline-block;
     }
@@ -279,6 +285,12 @@
         margin-left: 15px;
         margin-right: 15px;
     }
+    .module_block .row .item:nth-child(6) .description {
+        padding-right: 44px;
+    }
+    .module_block .row .item:nth-child(1) .description {
+        padding-right: 29px;
+    }
     .module_block .row .item .description span {
         font-size: 12px;
         line-height: 15px;
@@ -430,6 +442,8 @@
     }
     .features_block .over_link {
         margin: 20px auto;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
