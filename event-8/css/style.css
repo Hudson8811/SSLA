@@ -12,7 +12,11 @@
     font-size: 14px;
     line-height: 16px;
 }
-
+.video_block{
+    background: #fff;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
 #header .logo {
     width: 199px;
     height: 15px;
