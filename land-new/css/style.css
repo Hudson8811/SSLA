@@ -110,8 +110,11 @@
 }
 
 .gray_block .ah1 {
+    font-family: 'ProximaNova-Regular';
     font-size: 21px;
     line-height: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .gray_block .ah1 span {
@@ -121,7 +124,6 @@
 .yellow_block {
     background: #f3f4f4;
     padding-top: 41px;
-    padding-bottom: 16px;
 }
 
 .yellow_block .ah1 {
@@ -243,21 +245,12 @@
     padding-bottom: 12px;
 }
 
-.yellow_block .row .block:nth-child(3) p,
-.yellow_block .row .block:nth-child(6) p {
-    /*  margin-right: -10px;*/
-}
-
-.yellow_block .row .block:nth-child(4) p {
-    padding-right: 10px;
-}
-
 .yellow_block .row .block:nth-child(4) p span {
     margin-right: -20px;
 }
 
 .structure_block {
-    margin-top: 54px;
+    margin-top: 43px;
     font-family: 'ProximaNova-Regular';
 }
 
@@ -282,8 +275,8 @@
 }
 
 .structure_block .structure_block__text {
+    font-family: 'ProximaNova-Bold';
     font-size: 15px;
-    font-weight: 700;
     line-height: 21px;
     margin-top: 29px;
 }
@@ -356,9 +349,9 @@
 }
 
 .format_block .block:nth-child(2) p {
+    font-family: 'ProximaNova-Semibold';
     font-size: 15px;
     line-height: 21px;
-    font-weight: 600;
 }
 
 .format_block .block .ah2 {
@@ -513,7 +506,7 @@
 }
 
 .how_block .row .block:first-child p {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
 }
 
 .how_block .row .price-wrapper {
@@ -550,18 +543,19 @@
 .how_block .row .block .price {
     background: #fff;
     width: 194px;
-    padding-top: 11px;
-    padding-bottom: 6px;
+    padding-top: 15px;
+    padding-bottom: 2px;
     font-size: 32px;
-    line-height: 35px;
+    line-height: 22px;
     color: #e94f35;
     margin-bottom: 20px;
 }
 
 .how_block .row .block .price span {
     font-size: 14px;
-    line-height: 17px;
-    font-family: 'ProximaNova-Light';
+    line-height: 24px;
+    font-weight: 300;
+    font-family: 'ProximaNova-Semibold';
     text-transform: none;
     margin-top: -3px;
 }

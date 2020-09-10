@@ -7,6 +7,26 @@
 
 @media (min-width: 1250px) {}
 
+@media (min-width: 1000px) {
+	.yellow_block .row .block:first-child>div {
+		height: auto;
+	}
+
+	.yellow_block .row .block:nth-child(4) {
+		position: relative;
+		top: -44px;
+	}
+
+	.yellow_block .row .block:nth-child(4)>div {
+		height: 100%;
+	}
+
+	.yellow_block .row .block:nth-child(5)>div,
+	.yellow_block .row .block:nth-child(6)>div {
+		height: calc(100% - 44px);
+	}
+}
+
 @media (max-width: 1250px) {}
 
 @media (max-width: 999px) {
