@@ -609,16 +609,18 @@
 
 .form_block .radio_block {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 22px;
 }
 
 .form_block .radio_block-col {
     display: flex;
     flex-direction: column;
+    width: 53%;
 }
 
 .form_block .radio_block-col:last-child {
-    padding-left: 35px;
+    width: 47%;
 }
 
 .form_block .radio {
@@ -626,7 +628,7 @@
     padding-left: 25px;
     position: relative;
     line-height: 13px;
-    font-size: 13px;
+    font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 17px;
 }

@@ -289,6 +289,14 @@
 		width: calc(50% - 20px);
 		margin: 0 10px 15px;
 	}
+
+	.form_block .radio_block-col {
+		width: 100%;
+	}
+
+	.form_block .radio_block-col:last-child {
+		width: 100%;
+	}
 }
 
 @media (min-width: 701px) and (max-width: 800px) {
