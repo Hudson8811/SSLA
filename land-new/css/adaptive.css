@@ -1,6 +1,7 @@
 @media (min-width: 1000px) {
 	#header ul {
 		padding-left: 46px;
+		-moz-text-align-last: left;
 		text-align-last: left;
 	}
 }
@@ -84,6 +85,7 @@
 		width: 26px;
 		height: 53px;
 		-webkit-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
 		transition-duration: 0.4s;
 		z-index: 301;
 		position: absolute;
@@ -92,6 +94,7 @@
 
 	.btn11 .icon-left {
 		-webkit-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
 		transition-duration: 0.4s;
 		position: absolute;
 		height: 3px;
@@ -102,6 +105,7 @@
 
 	.btn11 .icon-left:before {
 		-webkit-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
 		transition-duration: 0.4s;
 		position: absolute;
 		width: 13px;
@@ -113,6 +117,7 @@
 
 	.btn11 .icon-left:after {
 		-webkit-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
 		transition-duration: 0.4s;
 		position: absolute;
 		width: 13px;
@@ -124,6 +129,7 @@
 
 	.btn11 .icon-right {
 		-webkit-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
 		transition-duration: 0.4s;
 		position: absolute;
 		height: 3px;
@@ -135,6 +141,7 @@
 
 	.btn11 .icon-right:before {
 		-webkit-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
 		transition-duration: 0.4s;
 		position: absolute;
 		width: 13px;
@@ -146,6 +153,7 @@
 
 	.btn11 .icon-right:after {
 		-webkit-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
 		transition-duration: 0.4s;
 		position: absolute;
 		width: 13px;
@@ -157,33 +165,39 @@
 
 	.btn11.open .icon-left {
 		-webkit-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
 		transition-duration: 0.4s;
 		background: transparent;
 	}
 
 	.btn11.open .icon-left:before {
 		-webkit-transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+		-ms-transform: rotate(45deg) scaleX(1.4) translate(2px, 2px);
 		transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
 	}
 
 	.btn11.open .icon-left:after {
 		-webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+		-ms-transform: rotate(-45deg) scaleX(1.4) translate(2px, -2px);
 		transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
 	}
 
 	.btn11.open .icon-right {
 		-webkit-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
 		transition-duration: 0.4s;
 		background: transparent;
 	}
 
 	.btn11.open .icon-right:before {
 		-webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+		-ms-transform: rotate(-45deg) scaleX(1.4) translate(-2px, 2px);
 		transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
 	}
 
 	.btn11.open .icon-right:after {
 		-webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+		-ms-transform: rotate(45deg) scaleX(1.4) translate(-2px, -2px);
 		transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
 	}
 
@@ -207,6 +221,7 @@
 	#header .menu {
 		display: none;
 		background: #889797;
+		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 		height: 100%;
 		width: 100%;

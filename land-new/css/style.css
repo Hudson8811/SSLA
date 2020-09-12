@@ -8,6 +8,7 @@
     background: #e94f35;
     color: #fff;
     padding-top: 14px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 14px;
     line-height: 16px;
@@ -25,6 +26,8 @@
 
 #header .call_me {
     /*opacity:0; visibility:hidden; */
+    -webkit-transition: .3s opacity, .3s visibility;
+    -o-transition: .3s opacity, .3s visibility;
     transition: .3s opacity, .3s visibility;
 }
 
@@ -186,8 +189,13 @@
     margin-right: -15px;
     margin-left: -15px;
     font-size: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
     align-items: stretch;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     max-height: unset !important;
 }
@@ -211,6 +219,7 @@
 .yellow_block .row .block>div {
     background: #fff;
     padding: 12px 13px 17px 19px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     min-height: 208px;
     height: 100%;
@@ -282,8 +291,13 @@
 }
 
 .program-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 30px -15px 0;
 }
@@ -296,8 +310,15 @@
 }
 
 .program figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     height: 100%;
     margin: 0;
@@ -313,8 +334,14 @@
 }
 
 .program .program__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 8px 10px 8px 21px;
     background-color: #e94f35;
@@ -401,6 +428,7 @@
 
 .leading_block .block .red_block {
     min-height: 170px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 29px 20px 20px;
     background: #e94f35;
@@ -467,6 +495,7 @@
 }
 
 .red_bg .inner {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -510,7 +539,10 @@
 }
 
 .how_block .row .price-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -608,13 +640,21 @@
 }
 
 .form_block .radio_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-bottom: 22px;
 }
 
 .form_block .radio_block-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 53%;
 }
@@ -624,6 +664,7 @@
 }
 
 .form_block .radio {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 25px;
     position: relative;
@@ -675,6 +716,7 @@
 
 .form_block .inputbox {
     border-radius: 0 !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     border: 1px solid #879696;
     font-size: 14px;
@@ -722,6 +764,7 @@
     background: #fff;
     text-align: center;
     border-radius: 20px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 60px;
     padding-left: 20px;
@@ -756,6 +799,7 @@
 
 .course-parthners-block {
     width: 100%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background: #ffffff;
     padding: 13px 25px 18px 19px;
@@ -764,9 +808,13 @@
 
 .co-pa-row {
     margin-bottom: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-align: center;
+    -webkit-box-align: center;
     align-items: center;
 }
 
@@ -778,6 +826,8 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 21px;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
     transition-duration: .2s;
 }
 .co-pa-row__item:hover{
