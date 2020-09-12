@@ -373,22 +373,20 @@
 	.yellow_block .row .block {
 		width: calc(100% - 30px);
 	}
+	.co-pa-row .co-pa-row__item:first-child{
+		width: 100%;
+	}
+	.co-pa-row .co-pa-row__item{
+		margin-bottom: 12px;
+	}
+	.co-pa-row{
+		margin-bottom: 0;
+	}
 }
 
 @media (max-width: 635px) {
 	.format_block .row .item {
 		padding-right: 0;
-	}
-}
-
-@media (max-width: 579px) {
-	.co-pa-row__item:not(:first-child) {
-		width: 100%;
-		margin-right: 0;
-		display: flex !important;
-		justify-content: center;
-		align-items: center;
-		margin-top: 15px;
 	}
 }
 

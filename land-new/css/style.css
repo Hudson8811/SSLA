@@ -574,7 +574,7 @@
     top: -8px;
     width: 16px;
     height: 22px;
-    background: url(../img/mark.png) no-repeat;
+    background: url(../img/mark.svg) no-repeat;
 }
 
 .form_block {
@@ -758,13 +758,16 @@
     width: 100%;
     box-sizing: border-box;
     background: #ffffff;
-    padding: 19px 25px 18px 19px;
+    padding: 13px 25px 18px 19px;
     margin-top: 24px;
 }
 
 .co-pa-row {
+    margin-bottom: 12px;
     display: flex;
     flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .co-pa-row .co-pa-row__item {
@@ -783,6 +786,7 @@
 .co-pa-row .co-pa-row__item img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 .course-parthners-block p {
