@@ -67,24 +67,3 @@ $(document).ready(function(){
 	/**************************/
 });
 
-$('.form_block .radio').click(function(){
-	var selected = false;
-    $("input.rad").each(function() {
-		if ($(this).prop("checked")) {
-			selected = true;
-		}
-	});
-	if (selected) {
-		$("#required").prop('required', false);
-	} else {
-		$("#required").prop('required', true);
-	}
-});
-
-$('.form_block .radio.item1').click(function(){
-     $('.form_block .radio.item2 input').prop('checked', false);
-});
-
-$('.form_block .radio.item2').click(function(){
-     $('.form_block .radio.item1 input').prop('checked', false);
-});
