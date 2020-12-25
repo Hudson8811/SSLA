@@ -85,7 +85,7 @@ $(document).ready(function () {
 		var max = parseInt($('.head-test-number__max').html());
 
 		var calc_type_1 = $('.js-test-slider--calc-type-1');
-
+		var calc_type_2 = $('.js-test-slider--calc-type-2');
 		test_slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
 			$(this).addClass('test-slider-change');
 
@@ -109,6 +109,32 @@ $(document).ready(function () {
 
 					});
 
+				} else if (calc_type_2.length > 0) {
+					var sum = [0,0,0,0,0];
+
+					for (i = 1; i <= max; ++i) {
+						var item = calc_type_2.find('input[name="step-' + i + '"]:checked');
+						var data = parseInt(item.data('type'));
+
+						sum[data-1] += 1;
+					}
+
+					var mini = getMinIndex(sum)+1;
+					var maxi = getMaxIndex(sum)+1;
+
+					var minText = $('#trt2-parameter-'+mini).siblings('.trt2-parameter__name').data('to-span');
+					var maxText = $('#trt2-parameter-'+maxi).siblings('.trt2-parameter__name').html();
+
+					$('#otsutstvuet-sklonnost-k').html(minText);
+					$('#sklonnost-k').html(maxText);
+
+
+					$.each(sum, function( index, value ) {
+						console.log(index, value);
+						var	id = index+1;
+						var val = declOfNum(value, ['балл', 'балла', 'баллов']);
+						$('#trt2-parameter-'+id).html('<span>'+value+'</span> ' + val);
+					});
 				}
 			}
 		});
@@ -170,3 +196,38 @@ $('.form_block .radio.item1').click(function () {
 $('.form_block .radio.item2').click(function () {
 	$('.form_block .radio.item1 input').prop('checked', false);
 });
+
+
+function getMaxIndex(array){
+	var max = array[0];
+	var index = 0;
+	for (var i = 0; i < array.length; i++) {
+		if (max < array[i]) {
+			max = array[i];
+			index = i;
+		};
+	}
+
+	return index;
+}
+
+
+function getMinIndex(array){
+	var min = array[0];
+	var index = 0;
+	for (var i = 0; i < array.length; i++) {
+		if (min > array[i]) {
+			min = array[i];
+			index = i;
+		}
+	}
+	return index;
+}
+
+function declOfNum(n, text_forms) {
+	n = Math.abs(n) % 100; var n1 = n % 10;
+	if (n > 10 && n < 20) { return text_forms[2]; }
+	if (n1 > 1 && n1 < 5) { return text_forms[1]; }
+	if (n1 == 1) { return text_forms[0]; }
+	return text_forms[2];
+}
