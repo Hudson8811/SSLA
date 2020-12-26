@@ -26,3 +26,17 @@ mixin breadcrumbs(paddingLeft=false,item1="", item2="", item3="", item4="", item
 				li.breadcrumbs-item
 					a.breadcrumbs-item-a(href="")
 						=item5
+
+mixin button(text, className, href, svgName)
+	if href
+		a.btn(href=href, class=className)&attributes(attributes)
+			span= text
+			if svgName
+				svg
+					use(xlink:href=`./icons/sprite.svg#${svgName}`)
+	else
+		button.btn(class=className)&attributes(attributes)
+			if svgName
+				svg
+					use(xlink:href=`./svg/sprite.svg#${svgName}`)
+			span= text

@@ -25,3 +25,7 @@
     }
   }
 }
+
+@mixin transition($args...) {
+  transition: $args 0.3s ease;
+}

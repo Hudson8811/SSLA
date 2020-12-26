@@ -11,3 +11,301 @@ block vars
 
 block main
 	main.main#main
+		section.about
+			.container.about__container
+				.about__wrapper
+					.about__col
+						.about__image
+							img(src='images/book.jpg', alt='')
+						blockquote.about__quote
+							p ЭТА КНИГА — <br> СИНЕРГИЯ ЮРИДИЧЕСКОЙ ПРАКТИКИ И ТЕОРИИ БИЗНЕС-ПСИХОЛОГИИ
+					.about__col
+						.about__title НАВЫКИ СОВРЕМЕННОГО ЮРИСТА: <br> SOFT SKILLS, ПОВЫШАЮЩИЕ <br> ЭФФЕКТИВНОСТЬ И КАЧЕСТВО ЖИЗНИ
+						.about__mobile
+							.about__image
+								img(src='images/book.jpg', alt='')
+							blockquote.about__quote
+								p ЭТА КНИГА — <br> СИНЕРГИЯ ЮРИДИЧЕСКОЙ ПРАКТИКИ И ТЕОРИИ БИЗНЕС-ПСИХОЛОГИИ
+						.about__part
+							h3 О ЧЁМ ЭТА КНИГА?
+							p Что такое soft skills юриста? Под этим англицизмом мы понимаем личные качества и навыки юриста, повышающие его профессиональную
+								|  эффективность и качество жизни в целом.
+							p Эта книга — синергия юриспруденции, психологии и бизнеса. Её авторы — эксперты в различных областях soft skills — объединили
+								|  свои опыт и знания, чтобы помочь современным юристам выйти на качественно новый уровень своей профессиональной и личной самореализации.
+							p «Будь больше, чем юрист!» ­— это девиз Soft Skills Law Academy и основная идея книги.
+						.about__part
+							h3 ДЛЯ КОГО ЭТА КНИГА?
+							p Эта книга предназначена для юристов (уже практикующих и только начинающих), которые хотят достичь успеха, стать гармонично развитой
+								|  личностью и профессионалом, получать удовольствие от юриспруденции и своего развития в ней.
+						.about__btns
+							+button('КУПИТЬ ЭЛЕКТРОННУЮ ВЕРСИЮ', 'about__btn', '#')
+							+button('КУПИТЬ печатную ВЕРСИЮ', 'about__btn', '#')
+		section.course
+			.container.course__container
+				.course__wrapper
+					.course__col
+						.course__text Книга <span>«НАВЫКИ СОВРЕМЕННОГО ЮРИСТА: SOFT SKILLS, КОТОРЫЕ ПОВЫШАЮТ ЭФФЕКТИВНОСТЬ И КАЧЕСТВО ЖИЗНИ»</span> эффективно дополняется <br>
+													|  <b>МОДУЛЬНЫМ ВИДЕОКУРСОМ SSLA</b>, <br> в котором преподаватели SSLA и эксперты юридического рынка делятся своими знаниями
+													|  и опытом по развитию soft skills современных юристов.
+					.course__col
+						.course-card
+							.course-card__bg
+								img(src='images/video-course.jpg', alt='')
+							.course-card__content
+								.course-card__left
+									p МОДУЛЬНЫй ВИДЕОКУРС для юристов
+									p SOFT SKILLS <br> FOR LAWYERS: гибкие навыки юриста
+									+button('подробнее', 'course-card__btn')
+								.course-card__logo
+									svg
+										use(xlink:href='./icons/sprite.svg#universarium')
+		section.editors
+			.editors__top
+				.container
+					.editors__title РЕДАКТОРЫ КНИГИ
+			.container.editors__container
+				.editors__wrapper
+					.person.editors__person
+						.person__image
+							img(src='images/persons/person-1.jpg', alt='')
+						.person__name Анна Сорокина
+						.person__position Юрист, психолог, коуч, <br> практикующий медиатор, <br> основатель и генеральный <br> директор Soft Skills Law Academy
+					.person.editors__person
+						.person__image
+							img(src='images/persons/person-2.jpg', alt='')
+						.person__name Дмитрий Гриц
+						.person__position Адвокат, медиатор, управляющий <br> партнёр юридической фирмы <br> «Гриц и партнёры»
+		section.authors
+			.container.authors__container
+				.authors__block
+					.authors__top КОЛЛЕКТИВ АВТОРОВ
+					.authors__wrapper
+						.person.authors__person
+							.person__image
+								img(src='images/persons/person-1.jpg', alt='')
+							.person__name Анна Сорокина
+							.person__position Юрист, психолог, коуч, <br> практикующий медиатор, <br> основатель и генеральный <br> директор Soft Skills Law Academy
+						.person.authors__person
+							.person__image
+								img(src='images/persons/person-2.jpg', alt='')
+							.person__name Дмитрий Гриц
+							.person__position Адвокат, медиатор, управляющий <br> партнёр юридической фирмы <br> «Гриц и партнёры»
+						.person.authors__person
+							.person__image
+								img(src='images/persons/person-3.jpg', alt='')
+							.person__name Василий Ралько
+							.person__position Юрист, коуч, медиатор, <br> практикующий нотариус, <br> бизнес-тренер Soft Skills Law <br> Academy
+						.person.authors__person
+							.person__image
+								img(src='images/persons/person-4.jpg', alt='')
+							.person__name Евгений Киселёв
+							.person__position Основатель команды бизнес <br> медиаторов М2В, медиатор, переговорщик, бизнес-тренер
+						.person.authors__person
+							.person__image
+								img(src='images/persons/person-5.jpg', alt='')
+							.person__name Артём Гусев
+							.person__position Основатель бюро подготовки <br> публичных выступлений «Глагол», организатор TEDx
+						.person.authors__person
+							.person__image
+								img(src='images/persons/person-6.jpg', alt='')
+							.person__name Юлия Сабукевич
+							.person__position Редактор бюро «Глагол»
+				.authors__block.authors__block--experts
+					.authors__top ЭКСПЕРТЫ
+					.authors__wrapper
+						.person.authors__person
+							.person__image
+								img(src='images/persons/person-2.jpg', alt='')
+							.person__name Дмитрий Гриц
+							.person__position Адвокат, медиатор, управляющий <br> партнёр юридической фирмы <br> «Гриц и партнёры»
+						.person.authors__person
+							.person__image
+								img(src='images/persons/person-7.jpg', alt='')
+							.person__name Артём Карапетов
+							.person__position Директор Юридического <br> института «М-Логос»
+						.person.authors__person
+							.person__image
+								img(src='images/persons/person-8.jpg', alt='')
+							.person__name Сергей Савельев
+							.person__position Партнёр юридической фирмы <br> «Савельев, Батанов и партнёры»
+						.person.authors__person
+							.person__image
+								img(src='images/persons/person-9.jpg', alt='')
+							.person__name Андрей Гривцов
+							.person__position Старший партнёр <br> адвокатского бюро «ЗКС»
+						.person.authors__person
+							.person__image
+								img(src='images/persons/person-10.jpg', alt='')
+							.person__name Анна Грищенкова
+							.person__position Партнёр адвокатского бюро «КИАП»
+						.person.authors__person
+							.person__image
+								img(src='images/persons/person-11.jpg', alt='')
+							.person__name Рафаэль Зохрабян
+							.person__position Директор по правовым вопросам <br> и взаимодействию с органами власти <br> группы Saint Gobain
+						.person.authors__person
+							.person__image
+								img(src='images/persons/person-12.jpg', alt='')
+							.person__name Юлий Тай
+							.person__position Управляющий партнёр адвокатского <br> бюро «Бартолиус»
+		section.content
+			.container.content__container
+				.content__title СОДЕРЖАНИЕ книги
+				.content__subtitle ЛЮБОЕ ОБУЧЕНИЕ ДОЛЖНО БЫТЬ СИСТЕМНЫМ, ПОЛЕЗНЫМ И АКТУАЛЬНЫМ. МЫ ВКЛЮЧИЛИ В КНИГУ ПОЛНУЮ СИСТЕМУ ГИБКИХ НАВЫКОВ,
+													|  ПОВЫШАЮЩИХ ЭФФЕКТИВНОСТЬ И КАЧЕСТВО ЖИЗНИ ЛЮБОГО ЮРИСТА И АДВОКАТА
+
+				.content__wrapper
+					.content__col
+						.content__short
+							b Первые две части:
+							p эффективное мышление и эмоциональный интеллект – являются основой и базисом применения всех навыков
+						.content__short
+							b Следующие части:
+							p коммуникационные и управленческие навыки – являются по сути специфическим применением эффективного мышления и эмоционального
+								|  интеллекта в различных сферах жизни юриста – на переговорах, выступлениях, взаимодействии с клиентами, командой и прочее
+					.content__col
+						.content__note
+							b Вы можете изучать материал книги в любой последовательности в зависимости от вашего индивидуального запроса
+							p <b>НО ПОМНИТЕ!</b> Последовательное и системное освоение <br> знаний – залог успеха усвоения материала и перехода <br>
+								|  на новый качественный уровень профессионализма
+
+				.content__wrapper
+					.content-part.content__chapter
+						.content-part__title
+							p часть 1  <span>|</span>
+							b ЭФФЕКТИВНОЕ МЫШЛЕНИЕ
+						ul.content-part__list
+							li Предпринимательское мышление <br> в юридической практике
+							li Критическое мышление юриста
+							li Конструктивное мышление
+							li Креативное мышление
+							li Стратегическое видение и системный подход
+							li Навык управление вниманием как важнейший <br> skill юриста XXI века
+					.content-part.content__chapter
+						.content-part__title
+							p часть 3 <span>|</span>
+							b коммуникационные навыки
+						ul.content-part__list
+							li Юрист на переговорах
+							li Управление конфликтом и медиация
+							li Публичные выступления юриста
+							li Профессиональный бренд и нетворкинг <br> современного юриста
+							li Клиентоориентированность юриста
+					.content-part.content__chapter
+						.content-part__title
+							p БЛОК 2 <span>|</span>
+							b Профилактика профессионального выгорания
+						ul.content-part__list
+							li EQ юриста как навык управления собой <br> и своими проявлениями
+							li EQ юриста во взаимоотношениях с другими людьми
+							li Cтрессоустойчивость и профилактика профессионального выгорания
+					.content-part.content__chapter
+						.content-part__title
+							p часть 4 <span>|</span>
+							b управленческие навыки
+						ul.content-part__list
+							li Лидерство и командообразование <br> в юридической практике
+							li Управление временем и жизнью: <br> лайф-менеджмент юриста
+
+				.content__btns
+					+button('КУПИТЬ ЭЛЕКТРОННУЮ ВЕРСИЮ', 'content__btn', '#')
+					+button('КУПИТЬ печатную ВЕРСИЮ', 'content__btn', '#')
+				.content__bottom
+					p <b>Эта книга не волшебная таблетка.</b> Ее задача – передать юристам знания. Однако знания без применения и отработки на практике бесполезны. Хотите развить ваши Soft Skills или заказать тренинг для вашей команды? Преподаватели SSLA к вашим услугам!
+					.content__to-order
+						+button('ЗАКАЗАТЬ КОРПОРАТИВНЫЙ ТРЕНИНГ', '', '#')
+		section.books
+			.container.books__container
+				.books__title Полезные материалы книги
+				.books__wrapper
+					.pdf-item.books__card
+						.pdf-item__content
+							.pdf-item__title КОНСТРУКТИВНОЕ МЫШЛЕНИЕ
+							.pdf-item__desc SWOT-Анализ
+						a.pdf-item__link(href='#', download) Cкачать pdf
+							svg(width='21px', height='17px')
+								use(xlink:href='./icons/sprite.svg#download')
+					.pdf-item.books__card
+						.pdf-item__content
+							.pdf-item__title ПУБЛИЧНЫЕ ВЫСТУПЛЕНИЯ
+							.pdf-item__desc Фреймворк подготовки <br> публичных выступлений
+						a.pdf-item__link(href='#', download) Cкачать pdf
+							svg(width='21px', height='17px')
+								use(xlink:href='./icons/sprite.svg#download')
+					.pdf-item.books__card
+						.pdf-item__content
+							.pdf-item__title ЭМОЦИОНАЛЬНЫЙ ИНТЕЛЛЕКТ
+							.pdf-item__desc Тест на определение уровня <br> эмоционального интеллекта
+						a.pdf-item__link(href='#', download) Cкачать pdf
+							svg(width='21px', height='17px')
+								use(xlink:href='./icons/sprite.svg#download')
+					.pdf-item.books__card
+						.pdf-item__content
+							.pdf-item__title ПУБЛИЧНЫЕ ВЫСТУПЛЕНИЯ
+							.pdf-item__desc Чек-лист для удалённых выступлений
+						a.pdf-item__link(href='#', download) Cкачать pdf
+							svg(width='21px', height='17px')
+								use(xlink:href='./icons/sprite.svg#download')
+					.pdf-item.books__card
+						.pdf-item__content
+							.pdf-item__title Профилактика <br> профессионального выгорания
+							.pdf-item__desc Работа с неудовлетворённостью
+						a.pdf-item__link(href='#', download) Cкачать pdf
+							svg(width='21px', height='17px')
+								use(xlink:href='./icons/sprite.svg#download')
+					.pdf-item.books__card
+						.pdf-item__content
+							.pdf-item__title ПУБЛИЧНЫЕ ВЫСТУПЛЕНИЯ
+							.pdf-item__desc Памятка оратора
+						a.pdf-item__link(href='#', download) Cкачать pdf
+							svg(width='21px', height='17px')
+								use(xlink:href='./icons/sprite.svg#download')
+					.pdf-item.books__card
+						.pdf-item__content
+							.pdf-item__title ПЕРЕГОВОРЫ
+							.pdf-item__desc Памятка переговорщика
+						a.pdf-item__link(href='#', download) Cкачать pdf
+							svg(width='21px', height='17px')
+								use(xlink:href='./icons/sprite.svg#download')
+					.pdf-item.books__card
+						.pdf-item__content
+							.pdf-item__title КЛИЕНТООРИЕНТИРОВАННОСТЬ
+							.pdf-item__desc Пример опросника
+						a.pdf-item__link(href='#', download) Cкачать pdf
+							svg(width='21px', height='17px')
+								use(xlink:href='./icons/sprite.svg#download')
+					.pdf-item.books__card
+						.pdf-item__content
+							.pdf-item__title РАЗРЕШЕНИЕ КОНФЛИКТОВ
+							.pdf-item__desc Тест на определение стиля <br> поведения в конфликте
+						a.pdf-item__link(href='#', target='_blank') ПРОЙТИ ТЕСТ
+							svg(width='15px', height='12px')
+								use(xlink:href='./icons/sprite.svg#arrow')
+					.pdf-item.books__card
+						.pdf-item__content
+							.pdf-item__title ЛАЙФ-МЕНЕДЖМЕНТ
+							.pdf-item__desc Тест «Индекс срочности»
+						a.pdf-item__link(href='#', target='_blank') ПРОЙТИ ТЕСТ
+							svg(width='15px', height='12px')
+								use(xlink:href='./icons/sprite.svg#arrow')
+				+button('Список ресурсов по Soft Skills для юристов', 'books__btn', '#', 'download')(download)
+		section.partners
+			.container.partners__container
+				.partners__title Soft Skills Law Academy благодарит за помощь <br> в создании книги своих дорогих партнёров:
+				.partners__wrapper
+					.partners__item
+						img(src='images/partners/sbp.png', alt='')
+					.partners__item
+						img(src='images/partners/grits.png', alt='')
+					.partners__item
+						img(src='images/partners/kiap.png', alt='')
+					.partners__item
+						img(src='images/partners/bartolius.png', alt='')
+					.partners__item
+						img(src='images/partners/zks.png', alt='')
+					.partners__item
+						img(src='images/partners/lcp.png', alt='')
+					.partners__item
+						img(src='images/partners/m-logos.png', alt='')
+					.partners__item
+						img(src='images/partners/glagol.png', alt='')

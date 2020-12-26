@@ -1,0 +1,949 @@
+.about {
+	background: #e6e6e6;
+
+	&__container {
+		padding: 37px 0 33px;
+	}
+
+	&__wrapper {
+		display: flex;
+		margin: 0 -44px;
+
+		@include tMax {
+			margin: 0;
+		}
+	}
+
+	&__col {
+		margin: 0 44px;
+
+		@include tMax {
+			margin: 0;
+		}
+
+		&:first-child {
+			width: calc(39.5% - 88px);
+
+			@include tMax {
+				display: none;
+			}
+		}
+
+		&:last-child {
+			width: calc(60.5% - 88px);
+
+			@include tMax {
+				width: 100%;
+			}
+		}
+	}
+
+	&__mobile {
+		display: none;
+
+		@include tMax {
+			display: flex;
+			margin-bottom: 20px;
+		}
+
+		@include mMax {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.about {
+			&__image {
+				@include mMax {
+					text-align: center;
+				}
+
+				img {
+					@include mMax {
+						max-width: 310px;
+						margin: 0 auto;
+					}
+				}
+			}
+
+			&__quote {
+				padding-left: 20px;
+
+				@include mMax {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+
+	&__image {
+		margin-left: -185px;
+
+		img {
+			max-width: 597px;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__quote {
+		display: flex;
+		align-items: center;
+		margin-top: 18px;
+		padding-left: 6px;
+
+		&::before {
+			content: '[';
+			font-size: 94px;
+			line-height: 94px;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: $orange;
+			margin-top: -9px;
+		}
+
+		p {
+			font-size: 15px;
+			line-height: 17.67px;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: $orange;
+			padding-left: 5px;
+
+			@include tMax {
+				max-width: 385px;
+
+				br {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__title {
+		font-size: 21px;
+		line-height: 24px;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: $orange;
+		margin-bottom: 31px;
+
+		@include tMax {
+			text-align: center;
+		}
+
+		@include sMax {
+			font-size: 18px;
+			line-height: 21px;
+
+			br {
+				display: none;
+			}
+		}
+	}
+
+	&__part {
+		+ .about__part {
+			margin-top: 25px;
+		}
+
+		h3 {
+			font-size: 15px;
+			font-weight: bold;
+			color: $orange;
+			margin-bottom: 22px;
+		}
+
+		p {
+			font-size: 15px;
+			line-height: 21px;
+			color: #252525;
+
+			+ p {
+				margin-top: 20px;
+			}
+		}
+	}
+
+	&__btns {
+		display: flex;
+		margin-top: 30px;
+
+		@include mMax {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__btn {
+		@include mMax {
+			width: 60%;
+		}
+
+		@include sMax {
+			width: 100%;
+		}
+
+		&:not(:last-child) {
+			margin-right: 27px;
+
+			@include mMax {
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+
+.course {
+	background-color: #859898;
+
+	&__container {
+		padding: 33px 0 31px;
+	}
+
+	&__wrapper {
+		display: flex;
+		margin: 0 -40px;
+
+		@include tMax {
+			flex-direction: column;
+			margin: 0;
+		}
+	}
+
+	&__col {
+		margin: 0 40px;
+
+		@include tMax {
+			margin: 0;
+		}
+
+		&:first-child {
+			width: calc(40% - 80px);
+
+			@include tMax {
+				width: 100%;
+				margin-bottom: 30px;
+			}
+		}
+
+		&:last-child {
+			width: calc(60% - 80px);
+
+			@include tMax {
+				width: 100%;
+			}
+		}
+	}
+
+	&__text {
+		padding-top: 24px;
+		font-size: 15px;
+		line-height: 21px;
+		color: $white;
+
+		@include tMax {
+			br {
+				display: none;
+			}
+		}
+
+		@include mMax {
+			text-align: center;
+		}
+
+		span {
+			font-weight: 600;
+		}
+	}
+}
+
+.course-card {
+	max-width: 544px;
+	width: 100%;
+	position: relative;
+	padding: 25px 28px 28px;
+	box-sizing: border-box;
+
+	@include tMax {
+		margin: 0 auto;
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		color: $white;
+
+		@include mMax {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__left {
+		max-width: 200px;
+
+		@include mMax {
+			order: 1;
+			text-align: center;
+		}
+
+		p {
+			@include mMax {
+				text-align: center;
+			}
+
+			&:first-of-type {
+				font-size: 15px;
+				line-height: 21px;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin-bottom: 12px;
+			}
+
+			&:last-of-type {
+				font-size: 21px;
+				line-height: 24px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&__btn {
+		width: 130px;
+		margin-top: 23px;
+	}
+
+	&__logo {
+		width: 153px;
+		height: 33px;
+		margin-top: 5px;
+
+		@include mMax {
+			margin-bottom: 20px;
+		}
+
+		svg {
+			width: 100%;
+			height: 100%;
+			fill: $white;
+		}
+	}
+}
+
+.editors {
+	&__top {
+		padding: 44px 0 11px;
+		background-color: $orange;
+	}
+
+	&__title {
+		font-size: 21px;
+		font-weight: 600;
+		color: $white;
+		text-transform: uppercase;
+
+		@include sMax {
+			text-align: center;
+		}
+	}
+
+	&__container {
+		padding: 45px 0 16px;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -16px;
+
+		@include sMax {
+			margin: 0;
+		}
+	}
+
+	&__person {
+		width: calc(33.3333% - 32px);
+		margin: 0 16px 20px;
+
+		@include mMax {
+			width: calc(50% - 32px);
+		}
+
+		@include sMax {
+			width: 100%;
+			margin: 0 0 20px;
+		}
+	}
+}
+
+.person {
+	@include mMax {
+		text-align: center;
+	}
+
+	&__image {
+		width: 270px;
+		height: 270px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin-left: 15px;
+		margin-bottom: 26px;
+
+		@include tMax {
+			width: 180px;
+			height: 180px;
+		}
+
+		@include mMax {
+			margin: 0 auto 26px;
+		}
+
+		@include sMax {
+			width: 150px;
+			height: 150px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: top;
+		}
+	}
+
+	&__name {
+		font-size: 21px;
+		line-height: 24px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $orange;
+		margin-bottom: 13px;
+	}
+
+	&__position {
+		font-size: 15px;
+		line-height: 20px;
+		color: #333333;
+	}
+}
+
+.authors {
+	background-color: $white;
+
+	&__container {
+		padding: 31px 0 6px;
+	}
+
+	&__block {
+		+ .authors__block {
+			margin-top: -4px;
+
+			@include mMax {
+				margin-top: 20px;
+			}
+		}
+
+		&--experts {
+			.authors__person {
+				margin-bottom: 42px;
+			}
+		}
+	}
+
+	&__top {
+		font-size: 21px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #849797;
+		border-bottom: 2px solid #8b9d9d;
+		padding-bottom: 9px;
+		margin-bottom: 50px;
+
+		@include mMax {
+			text-align: center;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -16px;
+
+		@include sMax {
+			margin: 0;
+		}
+	}
+
+	&__person {
+		width: calc(33.3333% - 32px);
+		margin: 0 16px 59px;
+
+		@include mMax {
+			width: calc(50% - 32px);
+		}
+
+		@include sMax {
+			width: 100%;
+			margin: 0 0 20px;
+		}
+	}
+}
+
+.content {
+	&__container {
+		padding: 45px 0 36px;
+	}
+
+	&__title {
+		font-size: 32px;
+		line-height: 34px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $orange;
+		margin-bottom: 37px;
+
+		@include mMax {
+			font-size: 28px;
+			line-height: 30px;
+			margin-bottom: 20px;
+		}
+
+		@include sMax {
+			font-size: 25px;
+			line-height: 27px;
+			text-align: center;
+		}
+	}
+
+	&__subtitle {
+		font-size: 15px;
+		line-height: 21px;
+		text-transform: uppercase;
+		color: $orange;
+		margin-bottom: 18px;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+
+		@include mMax {
+			margin: 0;
+		}
+
+		+ .content__wrapper {
+			margin-top: 43px;
+		}
+	}
+
+	&__col {
+		width: calc(50% - 30px);
+		margin: 0 15px;
+
+		@include mMax {
+			width: 100%;
+			margin: 0;
+		}
+	}
+
+	&__short {
+		font-size: 15px;
+		line-height: 21px;
+		color: #333333;
+
+		+ .content__short {
+			margin-top: 21px;
+		}
+
+		b {
+			text-transform: uppercase;
+		}
+	}
+
+	&__note {
+		font-size: 15px;
+		line-height: 21px;
+		color: #333333;
+		padding-top: 20px;
+
+		b {
+			text-transform: uppercase;
+		}
+
+		p {
+			color: $orange;
+			margin-top: 21px;
+		}
+	}
+
+	&__chapter {
+		width: calc(50% - 30px);
+		margin: 0 15px 24px;
+
+		@include mMax {
+			width: 100%;
+			margin: 0 0 16px;
+
+			&:nth-child(2) {
+				order: 1;
+			}
+
+			&:nth-child(3) {
+				order: 0;
+			}
+
+			&:nth-child(4) {
+				order: 2;
+			}
+		}
+	}
+
+	&__btns {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 10px;
+
+		@include mMax {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__btn {
+		@include mMax {
+			width: 60%;
+		}
+
+		@include sMax {
+			width: 100%;
+		}
+
+		&:not(:last-child) {
+			margin-right: 53px;
+
+			@include mMax {
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	&__bottom {
+		padding-top: 18px;
+		margin-top: 56px;
+		border-top: 2px solid $orange;
+
+		p {
+			font-size: 15px;
+			line-height: 21px;
+			color: #333333;
+			margin-bottom: 25px;
+		}
+	}
+
+	&__to-order {
+		text-align: right;
+
+		@include mMax {
+			text-align: center;
+		}
+	}
+}
+
+.content-part {
+	padding: 24px 20px 31px;
+	background-color: $white;
+	box-sizing: border-box;
+
+	&__title {
+		display: flex;
+		font-size: 18px;
+		line-height: 18px;
+		text-transform: uppercase;
+		color: $orange;
+		border-bottom: 3px solid $orange;
+		padding-bottom: 12px;
+
+		@include sMax {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+
+		p {
+			max-width: 90px;
+			width: 100%;
+
+			@include sMax {
+				margin-bottom: 5px;
+			}
+		}
+
+		span {
+			padding: 0 4px;
+
+			@include sMax {
+				display: none;
+			}
+		}
+	}
+
+	&__list {
+		margin-top: 21px;
+
+		li {
+			font-size: 15px;
+			line-height: 18px;
+			color: #333333;
+			padding-left: 13px;
+			position: relative;
+
+			+ li {
+				margin-top: 18px;
+			}
+
+			&::before {
+				content: '';
+				width: 3px;
+				height: 3px;
+				background-color: $orange;
+				position: absolute;
+				top: 7px;
+				left: 1px;
+			}
+		}
+	}
+}
+
+.books {
+	background-color: #849797;
+
+	&__container {
+		padding: 47px 0 52px;
+	}
+
+	&__title {
+		font-size: 32px;
+		line-height: 35px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $white;
+		margin-bottom: 55px;
+
+		@include mMax {
+			font-size: 28px;
+			line-height: 30px;
+			margin-bottom: 25px;
+		}
+
+		@include sMax {
+			font-size: 25px;
+			line-height: 27px;
+			text-align: center;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+
+		@include mMax {
+			margin: 0;
+		}
+	}
+
+	&__card {
+		width: calc(50% - 30px);
+		margin: 0 15px 23px;
+
+		@include mMax {
+			width: 100%;
+			margin: 0 0 23px;
+		}
+	}
+
+	&__btn {
+		position: relative;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 14px;
+		margin-top: 34px;
+
+		svg {
+			width: 21px;
+			height: 17px;
+			fill: $white;
+			margin-left: 33px;
+		}
+	}
+}
+
+.pdf-item {
+	display: flex;
+	background-color: #f3f4f4;
+
+	@include tMax {
+		flex-direction: column;
+	}
+
+	&__content {
+		width: 100%;
+		padding: 14px 18px;
+		background-color: #f3f4f4;
+		box-sizing: border-box;
+
+		@include tMax {
+			margin-bottom: auto;
+		}
+	}
+	
+	&__title {
+		font-size: 15px;
+		line-height: 21px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #333333;
+		margin-bottom: 6px;
+	}
+
+	&__desc {
+		font-size: 15px;
+		line-height: 18px;
+		color: #333333;
+	}
+
+	&__link {
+		max-width: 139px;
+		width: 100%;
+		display: block;
+		padding: 19px 15px;
+		background-color: $orange;
+		border: 1px solid $orange;
+		font-size: 15px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #fcfcfc;
+		box-sizing: border-box;
+		@include transition(all);
+
+		@include tMax {
+			max-width: 100%;
+			text-align: center;
+		}
+
+		@include dMin {
+			&:hover {
+				background-color: $white;
+				color: $orange;
+
+				svg {
+					fill: $orange;
+				}
+			}
+		}
+
+		svg {
+			display: block;
+			fill: #fcfcfc;
+			margin-top: 19px;
+			margin-left: auto;
+			@include transition(fill);
+
+			@include tMax {
+				margin: 8px auto 0;
+			}
+		}
+	}
+}
+
+.partners {
+	&__container {
+		padding: 64px 0 43px;
+	}
+
+	&__title {
+		font-size: 32px;
+		line-height: 36.34px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $orange;
+		margin-bottom: 61px;
+
+		@include tMax {
+			br {
+				display: none;
+			}
+		}
+
+		@include sMax {
+			font-size: 22px;
+			line-height: 24px;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+
+		@include tMax {
+			margin: 0 -10px;
+		}
+
+		@include sMax {
+			margin: 0;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $white;
+		width: calc(25% - 30px);
+		height: 229px;
+		margin: 0 15px 32px;
+
+		@include tMax {
+			width: calc(33.3333% - 20px);
+			margin: 0 10px 20px;
+		}
+
+		@include mMax {
+			width: calc(50% - 20px);
+		}
+
+		@include sMax {
+			width: 100%;
+			margin: 0 0 20px;
+		}
+
+		img {
+			pointer-events: none;
+		}
+	}
+}

@@ -12,6 +12,7 @@ var gulp = require('gulp'),
 	pngquant = require('imagemin-pngquant'),
 	rimraf = require('rimraf'),
 	reload = browserSync.reload,
+	svgSprite = require('gulp-svg-sprite'),
 	pug = require('gulp-pug');
 
 
@@ -23,6 +24,7 @@ var path = {
 		css: 'build/css/',
 		images: 'build/images/',
 		img: 'build/img/',
+		svg: 'build/icons/',
 		fonts: 'build/fonts/'
 	},
 	src: {
@@ -31,6 +33,7 @@ var path = {
 		style: 'src/style/main.scss',
 		images: 'src/images/**/*.*',
 		img: 'src/img/**/*.*',
+		svg: 'src/icons/**/*.svg',
 		fonts: 'src/fonts/**/*.*'
 	},
 	watch: {
@@ -39,6 +42,7 @@ var path = {
 		style: 'src/style/**/*.scss',
 		images: 'src/images/**/*.*',
 		img: 'src/img/**/*.*',
+		svg: 'src/svg/**/*.svg',
 		fonts: 'src/fonts/**/*.*'
 	},
 	clean: './build'
@@ -121,6 +125,18 @@ gulp.task('img:build', function () {
 		.pipe(reload({stream: true}));
 });
 
+gulp.task('svgSprite:build', function () {
+	return gulp.src(path.src.svg)
+		.pipe(svgSprite({
+			mode: {
+				stack: {
+					sprite: '../sprite.svg'
+				}
+			},
+		}))
+		.pipe(gulp.dest(path.build.svg));
+});
+
 gulp.task('fonts:build', function() {
 	return gulp.src(path.src.fonts)
 		.pipe(gulp.dest(path.build.fonts))
@@ -128,7 +144,7 @@ gulp.task('fonts:build', function() {
 
 
 
-gulp.task('build', gulp.parallel('html:build', 'js:build', 'style:build', 'fonts:build', 'images:build', 'img:build'));
+gulp.task('build', gulp.parallel('html:build', 'js:build', 'style:build', 'fonts:build', 'images:build', 'img:build', 'svgSprite:build'));
 
 gulp.task('watch', function(){
 	gulp.watch([path.watch.html], gulp.series("html:build"));
@@ -136,6 +152,7 @@ gulp.task('watch', function(){
 	gulp.watch([path.watch.js], gulp.series("js:build"));
 	gulp.watch([path.watch.img], gulp.series("img:build"));
 	gulp.watch([path.watch.images], gulp.series("images:build"));
+	gulp.watch([path.watch.svg], gulp.series("svgSprite:build"));
 	gulp.watch([path.watch.fonts], gulp.series("fonts:build"));
 });
 
