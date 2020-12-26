@@ -88,12 +88,14 @@ html {
 	font-size: 18px;
 	line-height: 18px;
 	margin-top: -3px;
-	font-family: 'ProximaNova-Bold';
+	font-family: 'ProximaNova';
+	font-weight: bold;
 	padding-bottom: 5px;
 }
 
 #header .call_me {
 	/*opacity:0; visibility:hidden; */
+	font-family: 'ProximaNova';
 	transition: .3s opacity, .3s visibility;
 }
 
@@ -110,12 +112,13 @@ html {
 }
 
 #header .menu li {
+	font-family: 'ProximaNova';
 	display: inline-block;
 	vertical-align: top;
 }
 
 #header .menu li:hover {
-	font-family: 'ProximaNova-Bold';
+	text-decoration: underline;
 }
 
 #header .menu li+li {
