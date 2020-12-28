@@ -3,7 +3,7 @@ extends layouts/default
 block vars
 	-
 		const page = {
-			title: 'index.html'
+			title: 'ТЕСТ НА ОПРЕДЕЛЕНИЕ СТИЛЯ ПОВЕДЕНИЯ В КОНФЛИКТЕ'
 		};
 
 
@@ -23,21 +23,28 @@ block header
 					.head-test-number__delimiter /
 					.head-test-number__max 30
 
-				h1.header-test-name ТЕСТ НА ОПРЕДЕЛЕНИЕ УРОВНЯ ЭМОЦИОНАЛЬНОГО ИНТЕЛЛЕКТА
+				h1.header-test-name ТЕСТ НА ОПРЕДЕЛЕНИЕ СТИЛЯ ПОВЕДЕНИЯ В КОНФЛИКТЕ
 
-				a.header-test-extit(href="SSLA/event-new/build/")
+				a.header-test-extit(href="/event-new/")
 					| <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 984 984"><defs><clipPath clipPathUnits="userSpaceOnUse" id="cp1"><path d="M0 0h984v984H0z"/></clipPath></defs><style></style><g clip-path="url(#cp1)"><path d="M600.38 492.03l367.9-367.92c10.12-10.13 15.7-23.64 15.72-38.05 0-14.41-5.58-27.94-15.72-38.05l-32.24-32.23C925.9 5.62 912.39.06 897.97.06c-14.4 0-27.91 5.56-38.05 15.72L492.01 383.67 124.1 15.78C113.98 5.62 100.46.06 86.04.06 71.64.06 58.12 5.62 48 15.78L15.74 48.01c-20.99 20.99-20.99 55.13 0 76.1l367.92 367.92L15.74 859.94C5.62 870.08.04 883.59.04 898c0 14.41 5.58 27.92 15.7 38.06l32.25 32.23C58.11 978.43 71.64 984 86.03 984c14.42 0 27.94-5.57 38.06-15.71l367.92-367.91 367.9 367.91c10.14 10.14 23.65 15.71 38.05 15.71h.02c14.41 0 27.92-5.57 38.05-15.71l32.24-32.23c10.12-10.13 15.71-23.65 15.71-38.06 0-14.41-5.59-27.92-15.71-38.06L600.38 492.03z" fill="#ffffff"/></g></svg>
 block main
 	main.main.main--column-center#main
 		.container
 			.test-wrap
-				.test-slider.js-test-slider.js-test-slider--calc-type-2
+				//текст, пропадающий на последнем слайде
+				.test-slider.test-slider--top.js-test-slider-top
+					.test-slide
+						.test-slide__content
+							.hide-this-after-test
+								h2.test-title Выберите из суждений то, которое является
+									.db-desktop
+									|  наиболее типичным для Вас
+
+
+				.test-slider.test-slider--main.js-test-slider.js-test-slider--calc-type-2
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
 									input.custom-radio__inp(type="radio" name="step-1" value="1" data-type="1")
@@ -51,9 +58,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
 									input.custom-radio__inp(type="radio" name="step-2" value="1" data-type="5")
@@ -67,9 +72,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
 									input.custom-radio__inp(type="radio" name="step-3" value="1" data-type="3")
@@ -83,9 +86,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
 									input.custom-radio__inp(type="radio" name="step-4" value="1" data-type="5")
@@ -99,9 +100,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
 									input.custom-radio__inp(type="radio" name="step-5" value="1" data-type="4")
@@ -115,9 +114,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
 									input.custom-radio__inp(type="radio" name="step-6" value="1" data-type="1")
@@ -131,9 +128,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
 									input.custom-radio__inp(type="radio" name="step-7" value="1" data-type="1")
@@ -147,9 +142,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
 									input.custom-radio__inp(type="radio" name="step-8" value="1" data-type="3")
@@ -163,9 +156,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
 									input.custom-radio__inp(type="radio" name="step-9" value="1" data-type="1")
@@ -179,9 +170,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
 									input.custom-radio__inp(type="radio" name="step-10" value="1" data-type="3")
@@ -195,9 +184,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
 									input.custom-radio__inp(type="radio" name="step-11" value="1" data-type="3")
@@ -211,9 +198,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
 									input.custom-radio__inp(type="radio" name="step-12" value="1" data-type="2")
@@ -227,9 +212,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
 									input.custom-radio__inp(type="radio" name="step-13" value="1" data-type="5")
@@ -243,9 +226,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
 									input.custom-radio__inp(type="radio" name="step-14" value="1" data-type="4")
@@ -259,9 +240,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
 									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="2")
@@ -275,241 +254,211 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="2")
+									input.custom-radio__inp(type="radio" name="step-16" value="1" data-type="2")
 									.custom-radio__fake
 									span.custom-radio__info  Я стараюсь не задеть чувств другого.
 
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="2" data-type="3")
+									input.custom-radio__inp(type="radio" name="step-16" value="2" data-type="3")
 									.custom-radio__fake
 									span.custom-radio__info  Я пытаюсь убедить другого в преимуществах моей позиции.
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="3")
+									input.custom-radio__inp(type="radio" name="step-17" value="1" data-type="3")
 									.custom-radio__fake
 									span.custom-radio__info  Обычно я настойчиво стараюсь добиться своего.
 
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="2" data-type="1")
+									input.custom-radio__inp(type="radio" name="step-17" value="2" data-type="1")
 									.custom-radio__fake
 									span.custom-radio__info  Я стараюсь сделать все, чтобы избежать бесполезной напряженности.
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="2")
+									input.custom-radio__inp(type="radio" name="step-18" value="1" data-type="2")
 									.custom-radio__fake
 									span.custom-radio__info  Если это сделает другого счастливым, я дам ему возможность настоять на своем.
 
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="2" data-type="5")
+									input.custom-radio__inp(type="radio" name="step-18" value="2" data-type="5")
 									.custom-radio__fake
 									span.custom-radio__info  Я даю возможность другому в чем-то остаться при своем мнении, если он также идет мне навстречу.
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="4")
+									input.custom-radio__inp(type="radio" name="step-19" value="1" data-type="4")
 									.custom-radio__fake
 									span.custom-radio__info  Первым делом я стараюсь ясно определить то, в чем состоят все затронутые интересы и спорные вопросы.
 
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="2" data-type="1")
+									input.custom-radio__inp(type="radio" name="step-19" value="2" data-type="1")
 									.custom-radio__fake
 									span.custom-radio__info  Я стараюсь отложить решение спорного вопроса с тем, чтобы со временем решить его окончательно.
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="4")
+									input.custom-radio__inp(type="radio" name="step-20" value="1" data-type="4")
 									.custom-radio__fake
 									span.custom-radio__info Я пытаюсь немедленно преодолеть наши разногласия.
 
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="2" data-type="5")
+									input.custom-radio__inp(type="radio" name="step-20" value="2" data-type="5")
 									.custom-radio__fake
 									span.custom-radio__info Я стремлюсь к лучшему сочетанию выгод и потерь для всех.
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="2")
+									input.custom-radio__inp(type="radio" name="step-21" value="1" data-type="2")
 									.custom-radio__fake
 									span.custom-radio__info Ведя переговоры, я стараюсь быть внимательным к желаниям другого.
 
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="2" data-type="4")
+									input.custom-radio__inp(type="radio" name="step-21" value="2" data-type="4")
 									.custom-radio__fake
 									span.custom-radio__info Я всегда склоняюсь к прямому обсуждению проблемы.
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="5")
+									input.custom-radio__inp(type="radio" name="step-22" value="1" data-type="5")
 									.custom-radio__fake
 									span.custom-radio__info Я пытаюсь найти позицию, которая находится посредине между моей позицией и точкой зрения другого человека.
 
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="2" data-type="3")
+									input.custom-radio__inp(type="radio" name="step-22" value="2" data-type="3")
 									.custom-radio__fake
 									span.custom-radio__info Я отстаиваю свои желания.
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="4")
+									input.custom-radio__inp(type="radio" name="step-23" value="1" data-type="4")
 									.custom-radio__fake
 									span.custom-radio__info Я озабочен тем, чтобы удовлетворить желания каждого.
 
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="2" data-type="1")
+									input.custom-radio__inp(type="radio" name="step-23" value="2" data-type="1")
 									.custom-radio__fake
 									span.custom-radio__info Иногда я представляю возможность другим взять на себя ответственность за решение спорного вопроса.
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="2")
+									input.custom-radio__inp(type="radio" name="step-24" value="1" data-type="2")
 									.custom-radio__fake
 									span.custom-radio__info Если позиция другого кажется ему очень важной, я постараюсь пойти навстречу его желаниям.
 
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="2" data-type="5")
+									input.custom-radio__inp(type="radio" name="step-24" value="2" data-type="5")
 									.custom-radio__fake
 									span.custom-radio__info Я стараюсь убедить другого прийти к компромиссу.
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="3")
+									input.custom-radio__inp(type="radio" name="step-25" value="1" data-type="3")
 									.custom-radio__fake
 									span.custom-radio__info Я пытаюсь доказать другому логику и преимущества моих взглядов.
 
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="2" data-type="2")
+									input.custom-radio__inp(type="radio" name="step-25" value="2" data-type="2")
 									.custom-radio__fake
 									span.custom-radio__info Ведя переговоры, я стараюсь быть внимательным к желаниям другого.
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="5")
+									input.custom-radio__inp(type="radio" name="step-26" value="1" data-type="5")
 									.custom-radio__fake
 									span.custom-radio__info Я предлагаю среднюю позицию.
 
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="2" data-type="4")
+									input.custom-radio__inp(type="radio" name="step-26" value="2" data-type="4")
 									.custom-radio__fake
 									span.custom-radio__info Я почти всегда озабочен тем, чтобы удовлетворить желания каждого из нас.
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="1")
+									input.custom-radio__inp(type="radio" name="step-27" value="1" data-type="1")
 									.custom-radio__fake
 									span.custom-radio__info Я избегаю позиции, которая может вызвать споры.
 
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="2" data-type="2")
+									input.custom-radio__inp(type="radio" name="step-27" value="2" data-type="2")
 									.custom-radio__fake
 									span.custom-radio__info Если это сделает другого счастливым, я дам ему возможность настоять на своем.
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="3")
+									input.custom-radio__inp(type="radio" name="step-28" value="1" data-type="3")
 									.custom-radio__fake
 									span.custom-radio__info Обычно я настойчиво стремлюсь добиться своего.
 
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="2" data-type="4")
+									input.custom-radio__inp(type="radio" name="step-28" value="2" data-type="4")
 									.custom-radio__fake
 									span.custom-radio__info Улаживая ситуацию, я стараюсь найти поддержку у другого.
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="5")
+									input.custom-radio__inp(type="radio" name="step-29" value="1" data-type="5")
 									.custom-radio__fake
 									span.custom-radio__info Я предлагаю среднюю позицию.
 
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="2" data-type="1")
+									input.custom-radio__inp(type="radio" name="step-29" value="2" data-type="1")
 									.custom-radio__fake
 									span.custom-radio__info Думаю, что не всегда стоит волноваться из-за каких-то возникающих разногласий.
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Выберите из суждений то, которое является
-								.db-desktop
-								|  наиболее типичным для Вас
+
 							.test-answer-radios.test-answer-radios--type-2
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="1" data-type="2")
+									input.custom-radio__inp(type="radio" name="step-30" value="1" data-type="2")
 									.custom-radio__fake
 									span.custom-radio__info Я стараюсь не задеть чувств другого.
 
 								label.custom-radio
-									input.custom-radio__inp(type="radio" name="step-15" value="2" data-type="4")
+									input.custom-radio__inp(type="radio" name="step-30" value="2" data-type="4")
 									.custom-radio__fake
 									span.custom-radio__info Я всегда занимаю такую позицию в спорном вопросе, чтобы мы с другим заинтересованным человеком могли добиться успеха.
 
@@ -538,7 +487,7 @@ block main
 										.trt2-parameter__val#trt2-parameter-5 <span>5</span> баллов
 
 								.trt2-info Таким образом, у вас отсутствует склонность к <span id="otsutstvuet-sklonnost-k">ПРИСПОСОБЛЕНИЮ</span>.<br> При этом,  <span id="sklonnost-k">СОТРУДНИЧЕСТВО</span> является для вас наиболее комфортной моделью  поведения в конфликте.
-								a.trt-2-link(href="") ПОСМОТРЕТЬ ОПИСАНИЕ ВСЕХ СТИЛЕЙ  >
+								a.trt-2-link(target="_blank" href="/event-new/pdf/SSLA_test_result.pdf") ПОСМОТРЕТЬ ОПИСАНИЕ ВСЕХ СТИЛЕЙ  >
 
 
 

@@ -168,10 +168,21 @@
 	}
 
 }
-
+@media (min-width: 768px){
+	.authors__block+.authors__block {
+		padding-top: 30px;
+		margin-top: -30px;
+	}
+}
 @media (min-width: 701px) and (max-width: 800px) {
 	.yellow_block .row {
 		max-height: 1150px;
+	}
+}
+
+@media screen and (min-width: 801px) {
+	.db-desktop {
+		display: block;
 	}
 }
 
@@ -187,6 +198,11 @@
 		padding: 25px 30px;
 	}
 }
+
+
+
+
+
 
 @media (max-width: 700px) {}
 

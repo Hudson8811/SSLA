@@ -3,7 +3,7 @@ extends layouts/default
 block vars
 	-
 		const page = {
-			title: 'index.html'
+			title: 'ТЕСТ «ИНДЕКС СРОЧНОСТИ»'
 		};
 
 
@@ -20,30 +20,40 @@ block header
 
 				h1.header-test-name ТЕСТ «ИНДЕКС СРОЧНОСТИ»
 
-				a.header-test-extit(href="SSLA/event-new/build/")
+				a.header-test-extit(href="/event-new/")
 					| <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 984 984"><defs><clipPath clipPathUnits="userSpaceOnUse" id="cp1"><path d="M0 0h984v984H0z"/></clipPath></defs><style></style><g clip-path="url(#cp1)"><path d="M600.38 492.03l367.9-367.92c10.12-10.13 15.7-23.64 15.72-38.05 0-14.41-5.58-27.94-15.72-38.05l-32.24-32.23C925.9 5.62 912.39.06 897.97.06c-14.4 0-27.91 5.56-38.05 15.72L492.01 383.67 124.1 15.78C113.98 5.62 100.46.06 86.04.06 71.64.06 58.12 5.62 48 15.78L15.74 48.01c-20.99 20.99-20.99 55.13 0 76.1l367.92 367.92L15.74 859.94C5.62 870.08.04 883.59.04 898c0 14.41 5.58 27.92 15.7 38.06l32.25 32.23C58.11 978.43 71.64 984 86.03 984c14.42 0 27.94-5.57 38.06-15.71l367.92-367.91 367.9 367.91c10.14 10.14 23.65 15.71 38.05 15.71h.02c14.41 0 27.92-5.57 38.05-15.71l32.24-32.23c10.12-10.13 15.71-23.65 15.71-38.06 0-14.41-5.59-27.92-15.71-38.06L600.38 492.03z" fill="#ffffff"/></g></svg>
 block main
 	main.main.main--column-center#main
 		.container
 			.test-wrap
-				.test-slider.test-slider--line.js-test-slider.js-test-slider--calc-type-1
+			.test-wrap
+				//текст, пропадающий на последнем слайде
+				.test-slider.test-slider--top.js-test-slider-top
+					.test-slide
+						.test-slide__content
+							.hide-this-after-test
+								h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
+
+								.test-points-info
+									.test-points-info__info
+										b 0
+										| Никогда
+									.test-points-info__delimiter |
+									.test-points-info__info
+										b 2
+										| Иногда
+									.test-points-info__delimiter |
+									.test-points-info__info
+										b 4
+										| Всегда
+
+
+				.test-slider.test-slider--main.test-slider--line.js-test-slider.js-test-slider--calc-type-1
+
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 Я работаю лучше всего, когда приходится спешить
 							.answer-radios-line
@@ -73,20 +83,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 В своей неспособности уделить время глубоким раздумьям о самом себе я виню суету и давление внешних обстоятельств
 							.answer-radios-line
@@ -114,20 +111,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 Меня раздражает медлительность событий и людей, окружающих меня. Я не люблю ждать или топтаться на месте
 							.answer-radios-line
@@ -155,20 +139,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 Я испытываю чувство вины, когда отрываюсь от работы
 							.answer-radios-line
@@ -196,20 +167,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 Я постоянно мечусь между делами и мероприятиями
 							.answer-radios-line
@@ -237,20 +195,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 Я отмахиваюсь от людей, когда мне нужно закончить работу
 							.answer-radios-line
@@ -278,20 +223,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 Я ощущаю беспокойство, если теряю контакт с офисом более чем на несколько минут
 							.answer-radios-line
@@ -319,20 +251,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 Я занимаюсь каким-то одним делом, но думаю о другом
 							.answer-radios-line
@@ -360,20 +279,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 Лучше всего мне удается разрешение кризисных ситуаций
 							.answer-radios-line
@@ -401,20 +307,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 Всплеск адреналина от нового кризиса приносит мне больше удовлетворения, чем равномерное движение к долгосрочной цели
 							.answer-radios-line
@@ -442,20 +335,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 Я отказываюсь провести время с дорогими мне людьми ради преодоления какого-нибудь кризиса
 							.answer-radios-line
@@ -483,20 +363,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 Я предполагаю, что люди должны с пониманием относиться к тому, что я разочаровываю их или пускаю другие дела на самотек, когда нужно справляться с очередным кризисом
 							.answer-radios-line
@@ -524,20 +391,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 Я ощущаю, что день прожит не зря, если мне удается преодолеть какой-нибудь кризис
 							.answer-radios-line
@@ -565,20 +419,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 Я ем, не отрываясь от работы
 							.answer-radios-line
@@ -606,20 +447,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 Я продолжаю думать, что когда-нибудь я смогу наконец заняться тем, чего действительно хочу
 							.answer-radios-line
@@ -646,20 +474,7 @@ block main
 
 					.test-slide
 						.test-slide__content
-							h2.test-title Отметьте на шкале точку, которая наиболее соответствует вашему обычному поведению или отношению к суждению
 
-							.test-points-info
-								.test-points-info__info
-									b 0
-									| Никогда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 2
-									| Иногда
-								.test-points-info__delimiter |
-								.test-points-info__info
-									b 4
-									| Всегда
 
 							.test-description-type-3 Большое количество решенных дел к концу рабочего дня наполняет меня ощущением, что я поработал по-настоящему продуктивно
 							.answer-radios-line
@@ -691,31 +506,29 @@ block main
 						.test-slide__content
 							.test-result-points
 								.test-result-points__info Ваш результат:
-								.test-result-points__val#test-result-points__val 62
+								.test-result-points__val#test-result-points__val 0
 							.test-results#test-results
 								.test-results__item(data-min="0" data-max="25")
 									.test-results__info
 										p
 											b СЛАБАЯ ПРИВЕРЖЕННОСТЬ СРОЧНОСТИ
-										p Не беспокойтесь - есть много способов, с помощью которых вы можете развить эмоциональный интеллект. В книге
-											b  “Навыки современного юриста: soft skills, повышающие эффективность и качество жизни”
-											|  вы найдёте много полезных советов, работающих техник и алгоритмов!
+										p Парадигма срочности, вероятно, не является существенным фактором вашей жизни.
+											span.db-desktop
+											|  Вы можете эффективно управлять своим временем, распределять бюджетируемые (требующие много времени на реализацию) задачи по дням, получать удовольствие от&nbsp;осознанного управления собственной жизнью, а не от «‎тушения пожаров»
+
 
 								.test-results__item(data-min="26" data-max="45")
 									.test-results__info
 										p
 											b СИЛЬНАЯ ПРИВЕРЖЕННОСТЬ СРОЧНОСТИ
-										p Вероятно, у вас хорошие отношения с некоторыми вашими коллегами, но с другими могут возникать трудности.
-										p Хорошая новость в том, что у вас есть прекрасная возможность значительно улучшить свои рабочие отношения. Пусть книга
-											b  “Навыки современного юриста: soft skills, повышающие эффективность и качество жизни”
-											|   будет для вас ещё одной возможностью поработать над осознанным развитием вашего EQ.
+										p Осторожно! Вы в зоне риска. Часто вы неосознанно сопротивляетесь поэтапному планированию и распределению бюджетируемых (требующих много времени на реализацию) задач по дням и неделям. Это скучно и неинтересно. Больше удовольствия вам доставляет «‎тушение пожаров», выполнение задач в самый последний момент, балансирование «‎на грани фола». Помните, что такая тенденция может привести к наркотической зависимости от срочности, когда начнёт страдать не только качество выполняемых вами задач, но и ваше физическое и психологическое состояние.
 
 								.test-results__item(data-min="46" data-max="999")
 									.test-results__info
 										p
 											b ПАГУБНАЯ ЗАВИСИМОСТЬ ОТ СРОЧНОСТИ
-										p Прекрасно! Вы эмоционально интеллектуальный человек. У вас отличные отношения с&nbsp;друзьями и коллегами, и, вероятно, люди обращаются к вам за советами.
-										p Однако, когда много людей восхищаются вашими человеческими качествами, легко упускать&nbsp;из виду ваши собственные потребности. Часто люди с развитым эмоциональным интеллектом обладают большим лидерским потенциалом. Вы можете раскрыть в себе этот потенциал, если будете искать возможности для его развития. Только вперёд! Ведь вы уже гораздо больше, чем просто юрист!
+										p ВНИМАНИЕ! У вас выявлена наркотическая зависимость от срочности. Возможно, вы так привыкли к повышающим уровень адреналина кризисным срочным ситуациям, что уже не можете обходиться без этих «‎доз» - только ими полнится ваша энергия, только в них вы находите радость бытия, ощущение собственной полезности и наслаждение от успеха. «‎Тушение пожаров» даёт вам возможность почувствовать себя героем. И часто подсознательно вы хватаетесь за любые срочные дела, лишь бы оставаться в движении, создавать видимость сильной занятости и деловитости.  Ведь в деловитости вы черпаете ощущение безопасности. Это тешит ваше самолюбие, оправдывает ваше существование, возвышает вас в глазах окружающих. Это также хороший повод не заниматься тем, что является в вашей жизни действительно важным.
+
 
 
 
