@@ -129,7 +129,7 @@
 		margin-bottom: 31px;
 
 		@include tMax {
-			text-align: center;
+		//	text-align: center;
 		}
 
 		@include sMax {
@@ -529,7 +529,7 @@
 		@include sMax {
 			font-size: 25px;
 			line-height: 27px;
-			text-align: center;
+			//text-align: center;
 		}
 	}
 
@@ -686,8 +686,8 @@
 
 		@include sMax {
 			flex-direction: column;
-			align-items: center;
-			text-align: center;
+			//align-items: center;
+			//text-align: center;
 		}
 
 		p {
@@ -759,7 +759,7 @@
 		@include sMax {
 			font-size: 25px;
 			line-height: 27px;
-			text-align: center;
+			//text-align: center;
 		}
 	}
 
@@ -793,6 +793,7 @@
 
 		svg {
 			width: 21px;
+			min-width: 21px;
 			height: 17px;
 			fill: $white;
 			margin-left: 33px;
@@ -818,7 +819,7 @@
 			margin-bottom: auto;
 		}
 	}
-	
+
 	&__title {
 		font-size: 15px;
 		line-height: 21px;
@@ -851,6 +852,9 @@
 		@include tMax {
 			max-width: 100%;
 			text-align: center;
+			display: flex;
+			justify-content: space-between;
+			padding: 10px 15px;
 		}
 
 		@include dMin {
@@ -872,7 +876,7 @@
 			@include transition(fill);
 
 			@include tMax {
-				margin: 8px auto 0;
+				margin: 0;
 			}
 		}
 	}
@@ -900,7 +904,7 @@
 		@include sMax {
 			font-size: 22px;
 			line-height: 24px;
-			text-align: center;
+			//text-align: center;
 			margin-bottom: 30px;
 		}
 	}

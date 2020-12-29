@@ -243,8 +243,12 @@ html {
 }
 
 .test-slider {
+
 	&--line .test-slide {
-		padding: 47px 81px 28px 84px;
+		@media screen and (min-width:801px) {
+			padding: 47px 81px 28px 84px;
+		}
+
 	}
 
 
@@ -515,7 +519,8 @@ html {
 			opacity: 0;
 			z-index: 2;
 		}
-		&::after{
+
+		&::after {
 			content: '';
 			display: block;
 			position: absolute;
@@ -668,4 +673,25 @@ html {
 	&:active {}
 
 	&:focus {}
+}
+
+.test-slider--main .test-slide:last-child {
+
+	.test-slide__content {
+		display: none;
+	}
+}
+
+
+.buy-plug.fancybox-content {
+	padding: 0;
+}
+
+.buy-plug img {
+	max-width: 100%;
+	height: auto;
+}
+
+.fancybox-bg {
+	background: #e6e6e6;
 }

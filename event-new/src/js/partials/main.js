@@ -51,6 +51,18 @@ $(document).ready(function () {
 
 
 
+	$('a[href="#buy-plug"]').click(function(e){
+		e.preventDefault();
+
+		$.fancybox.open({
+			src  : '#buy-plug',
+			type : 'inline',
+			opts : {
+				touch:false
+
+			}
+		});
+	});
 
 
 
@@ -65,7 +77,7 @@ $(document).ready(function () {
 			accessibility: false,
 			infinite: false,
 			//fade: true
-			adaptiveHeight: true,
+			//adaptiveHeight: true,
 
 		});
 		var current = $('.head-test-number__current');
@@ -77,6 +89,7 @@ $(document).ready(function () {
 
 			if (nextSlide === max) {
 
+				$('.test-slider--main .test-slide:last-child .test-slide__content').slideDown(300);
 				$('.js-test-slider-top .hide-this-after-test').slideUp(200);
 
 

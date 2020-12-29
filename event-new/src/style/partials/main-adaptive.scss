@@ -191,8 +191,8 @@
 		display: none;
 	}
 
-	.test-slide {
-		min-height: 250px;
+
+	  .test-slide {
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 		padding: 25px 30px;
@@ -282,6 +282,11 @@
 	}
 }
 
+@media (max-width: 499px) {
+.btn-499-w100{
+	width: 100%;
+}
+}
 @media (max-width: 450px) {
 	#header .logo {
 		margin-left: auto;
@@ -314,4 +319,12 @@
 	}
 }
 
-@media (max-width: 350px) {}
+@media (max-width: 350px) {
+	#main.main--column-center{
+		padding-top: 0;
+	}
+	.test-wrap{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+}
