@@ -592,7 +592,15 @@
 		p {
 			color: $orange;
 			margin-top: 21px;
+
+			@include tMax{
+				br{
+					display: none;
+				}
+			}
 		}
+
+
 	}
 
 	&__chapter {
@@ -730,6 +738,12 @@
 				position: absolute;
 				top: 7px;
 				left: 1px;
+			}
+
+			@include tMax{
+				br{
+					display: none;
+				}
 			}
 		}
 	}
