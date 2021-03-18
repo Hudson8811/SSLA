@@ -965,6 +965,10 @@
     line-height: 31px;
     margin-bottom: 10px;
   }
+
+  .event-8 .gray_block p span.db {
+    display: none;
+  }
 }
 .event-8 .item-with-desc .heading {
   flex-wrap: wrap;
