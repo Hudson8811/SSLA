@@ -894,6 +894,8 @@
 .event-8 .call_me2 span {
   font-size: 15px;
   line-height: 24px;
+  font-weight: bold;
+  text-transform: none;
 }
 .event-8 .call_me3 {
   top: 202px;
