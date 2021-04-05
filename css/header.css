@@ -1,0 +1,45 @@
+.sh-burger {
+  position: relative;
+  display: none;
+  width: 34px;
+  height: 26px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.sh-burger span,
+.sh-burger span::before,
+.sh-burger span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 34px;
+  height: 2px;
+  margin-top: -1px;
+  margin-left: -17px;
+  background-color: #fff;
+}
+.sh-burger span::before,
+.sh-burger span::after {
+  content: "";
+  transition: 0.2s;
+}
+.sh-burger span::before {
+  transform: translateY(-12px);
+}
+.sh-burger span::after {
+  transform: translateY(12px);
+}
+.sh-burger--active {
+  background: #F5F6FB;
+}
+.sh-burger--active span {
+  height: 0;
+}
+.sh-burger--active span::before {
+  transform: rotate(45deg);
+  background: #323340;
+}
+.sh-burger--active span::after {
+  transform: rotate(-45deg);
+  background: #323340;
+}/*# sourceMappingURL=header.css.map */
