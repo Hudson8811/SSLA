@@ -1160,6 +1160,12 @@
   min-width: 280px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 700px) {
+  .form_of_education-item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
 @media screen and (max-width: 579px) {
   .form_of_education-item {
     margin-left: auto;
