@@ -982,11 +982,17 @@
   font-family: "ProximaNova-Regular";
 }
 @media screen and (max-width: 999px) {
+  .event-10 .banner_block {
+    background-position: 39%;
+  }
   .event-10 .banner_block .call_me {
     margin-left: 0;
   }
   .event-10 .banner_block .nowrap {
     white-space: normal;
+  }
+  .event-10 .banner_block > .inner .inner {
+    width: 100%;
   }
 }
 .event-10 .banner_block .over_link {
@@ -994,11 +1000,26 @@
   font-size: 21px;
   margin-top: 30px;
 }
+@media screen and (max-width: 999px) {
+  .event-10 .banner_block .over_link {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
 @media screen and (max-width: 579px) {
   .event-10 .banner_block .over_link {
-    box-sizing: border-box;
-    font-size: 12px;
-    min-width: 216px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .event-10 .banner_block .left_block img {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .event-10 .banner_block .ah2 {
+    font-size: 29px;
   }
 }
 .event-10 .call_me2 span,
@@ -1086,11 +1107,22 @@
   display: inline-block;
   margin-top: 20px;
 }
+@media screen and (max-width: 579px) {
+  .event-10 .content_course .over_link {
+    font-size: 18px;
+  }
+}
 .event-10 .sertifikat {
   background-color: #e94f35;
 }
 .event-10 .sertifikat .heading {
   color: #fff;
+}
+@media screen and (max-width: 579px) {
+  .event-10 .sertifikat .heading {
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
 .event-10 .sertifikat .subheading {
   color: #fff;
@@ -1137,6 +1169,12 @@
 .form_of_education-item:nth-child(3n) {
   margin-right: 0;
 }
+@media screen and (max-width: 579px) {
+  .form_of_education-item:nth-child(3n) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .form_of_education-item p {
   display: block;
   padding: 0 20px;
@@ -1178,14 +1216,17 @@
   font-weight: 600;
   letter-spacing: 0.5px;
 }
+.teachers.description_block .ah4 {
+  font-family: "ProximaNova-Bold";
+}
 .teachers.description_block .description_block-item {
   margin-top: 60px;
 }
 .teachers.description_block .description_block-item .flex_block {
-  margin-bottom: -20px;
+  margin-bottom: -60px;
 }
 .teachers.description_block .description_block-item .flex_block .flex_block-item {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   margin-top: 0;
 }
 .teachers.description_block .description_block-item .flex_block .flex_block-item:nth-child(1) .text-block .text {
