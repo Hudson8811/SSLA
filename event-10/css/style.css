@@ -1163,6 +1163,8 @@
   justify-content: center;
   align-items: center;
   min-width: 280px;
+  font-size: 18px !important;
+  padding: 13px 10px;
 }
 .form_of_education-btns a:nth-child(3n) {
   margin-right: 0;
